@@ -1,6 +1,5 @@
 ---
-layout: post
-title: Zizzla landing
+layout: default
 ---
 
 Hello wheels!
