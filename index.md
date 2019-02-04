@@ -1,5 +1,6 @@
 ---
 layout: default
+title: Home
 ---
 
-Hello wheels!
+<h1>{{ "hello wheels! | captitalize }}</h1>
