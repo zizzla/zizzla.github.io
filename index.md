@@ -3,4 +3,4 @@ layout: default
 title: Home
 ---
 
-<h1>{{ "hello wheels! | captitalize }}</h1>
+<h1>{{ "hello wheels!" | capitalize }}</h1>
