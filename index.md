@@ -1,6 +1,9 @@
 ---
-layout: default
-title: Home
+layout: interest
+title: Interest
+background-image:
 ---
-
-<h1>{{ "hello wheels!" | capitalize }}</h1>
+# Zizzla
+## Bringing stylish travel to your neighbourhood
+Zizzla is currently looking for new areas to bring the goodness of electric cargo bikes to.
+The more people sign up, the faster we come!
