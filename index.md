@@ -1,6 +1,5 @@
 ---
-layout: interest
-title: Interest
+layout: default
 background-image:
 ---
 # Zizzla
