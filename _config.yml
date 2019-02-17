@@ -1,5 +1,15 @@
-title: Welcome to Zizzla
+title: Zizzla
 description: Bye car, thanks for the ride
-show_downloads: false
-google_analytics:
-theme: jekyll-theme-tactile
+
+#google_analytics:
+
+# Contacts
+email: anders.dalen@zizzla.com
+#twitter_username:
+
+repository: zizzla/zizzla.github.io
+
+# Build settings
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
