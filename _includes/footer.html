@@ -1,7 +1,34 @@
-<footer>
-  contacts
+<div class="py-5 border-top bg-white">
+  <div class="container">
 
-  site description
+    <p class="h5 mb-3">{{ site.title | escape }}</p>
 
-  social links
-</footer>
+    <div class="row">
+
+      <div class="col-sm">
+        <ul class="list-unstyled">
+          <li>
+            {%- if site.author -%}
+              {{ site.author | escape }}
+            {%- else -%}
+              {{ site.title | escape }}
+            {%- endif -%}
+          </li>
+          {%- if site.email -%}
+            <li>
+              <a href="mailto:{{ site.email }}">
+                {{ site.email }}
+              </a>
+            </li>
+          {%- endif -%}
+        </ul>
+      </div>
+
+      <div class="col-sm text-right">
+        <p>{{- site.description | escape -}}</p>
+      </div>
+
+    </div>
+
+  </div>
+</div>
