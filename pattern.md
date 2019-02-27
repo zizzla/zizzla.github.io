@@ -6,9 +6,9 @@ title: Zizzla Patterns
 <script>
   function showCss(attribute) {
     const element = document.querySelector(attribute)
-    const style = getComputedStyle(element)
-    console.log(style)
-    return style
+    return style = getComputedStyle(element)
+    //console.log(style)
+    //return style
   }
 </script>
 
@@ -25,7 +25,7 @@ Zimplizzity unites
   </div>
 </div>
 <script>
-showCss('.bg-primary');
+const style = showCss('.bg-primary');
 const color = style.color;
 document.write(color);
 </script>
