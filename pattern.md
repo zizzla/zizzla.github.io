@@ -1,10 +1,14 @@
 ---
 layout: default
 title: Zizzla Patterns
-customjs:
- - "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
- - "/javascript/pattern.js"
 ---
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+  function showCss(attribute) {
+    const element = document.querySelector(attribute)
+    return style = getComputedStyle(element)
+</script>
+
 ## About
 Zimplizzity unites
 
