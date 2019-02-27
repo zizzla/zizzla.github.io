@@ -16,6 +16,11 @@ Zimplizzity unites
 ## Color
 
 <div class="color-swatch bg-primary"></div>
+<script>
+showCss('bg-primary');
+const color = style.color;
+document.write(color);
+</script>
 
 ## Typography
 
