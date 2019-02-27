@@ -4,11 +4,9 @@ title: Zizzla Patterns
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
-  function showCss(attribute) {
-    const element = document.querySelector(attribute)
-    return style = getComputedStyle(element)
-    //console.log(style)
-    //return style
+  function cssPropertyValue(element, property) {
+    var element = document.querySelector(element)
+    return cssValue = getComputedStyle(element).getPropertyValue(property)
   }
 </script>
 
@@ -16,21 +14,45 @@ title: Zizzla Patterns
 Zimplizzity unites
 
 ## Color
-
-<div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-  <!--div class="card-header">Header</div-->
-  <div class="card-body">
-    <h5 class="card-title">Primary card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+<div class="card-deck">
+  <div class="card text-white bg-primary">
+    <div class="card-body">
+      <h5 class="card-title">bg-primary</h5>
+      <p class="card-text">
+        <script>
+          var cssValue = cssPropertyValue('.bg-primary', 'background-color');
+          document.write(cssValue);
+        </script>
+      </p>
+    </div>
+  </div>
+  <div class="card text-white bg-secondary">
+    <div class="card-body">
+      <h5 class="card-title">bg-secondary</h5>
+      <p class="card-text">
+        <script>
+          var cssValue = cssPropertyValue('.bg-secondary', 'background-color');
+          document.write(cssValue);
+        </script>
+      </p>
+    </div>
+  </div>
+  <div class="card text-white bg-info">
+    <div class="card-body">
+      <h5 class="card-title">bg-info</h5>
+      <p class="card-text">
+        <script>
+          var cssValue = cssPropertyValue('.bg-info', 'background-color');
+          document.write(cssValue);
+        </script>
+      </p>
+    </div>
   </div>
 </div>
-<script>
-var style = showCss('.bg-primary');
-const color = style.color;
-document.write(color);
-</script>
 
 ## Typography
+
+
 
 ## Grid
 
