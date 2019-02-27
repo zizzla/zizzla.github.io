@@ -25,7 +25,7 @@ Zimplizzity unites
   </div>
 </div>
 <script>
-showCss('bg-primary');
+showCss('.bg-primary');
 const color = style.color;
 document.write(color);
 </script>
