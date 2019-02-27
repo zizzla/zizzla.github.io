@@ -6,7 +6,9 @@ title: Zizzla Patterns
 <script>
   function showCss(attribute) {
     const element = document.querySelector(attribute)
-    return style = getComputedStyle(element)
+    const style = getComputedStyle(element)
+    console.log(style)
+    return style
   }
 </script>
 
