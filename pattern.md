@@ -15,7 +15,7 @@ Zimplizzity unites
 
 ## Color
 
-<div class="color-swatch bg-primary"></div>
+<div class="rounded bg-primary">Something</div>
 <script>
 showCss('bg-primary');
 const color = style.color;
