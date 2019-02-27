@@ -1,7 +1,15 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
 
-  {%- include head.html -%}
+  <head>
+
+    {%- include head.html -%}
+
+    {%- if page.url == "pattern" -%}
+      {%- include head-pattern.html -%}
+    {%- endif -%}
+
+  </head>
 
   <body>
 
