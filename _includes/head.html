@@ -6,4 +6,17 @@
 {%- feed_meta -%}
 <script src="{{ "/assets/javascript/bootstrap/jquery.min.js" | relative_url }}"></script>
 <script src="{{ "/assets/javascript/bootstrap/bootstrap.bundle.min.js" | relative_url }}"></script>
+
+{% if page.custom_css %}
+  {% for stylesheet in page.custom_css %}
+  <link rel="stylesheet" href="{{ stylesheet }}" media="screen" type="text/css">
+  {% endfor %}
+{% endif %}
+
+{% if page.custom_js %}
+  {% for js_file in page.custom_js %}
+  <script src='{{ js_file }}' type="text/javascript"></script>
+  {% endfor %}
+{% endif %}
+
 {% include google_analytics.html %}

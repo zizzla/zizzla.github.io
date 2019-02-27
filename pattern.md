@@ -2,8 +2,8 @@
 layout: default
 title: Zizzla Patterns
 customjs:
- - https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js
- - url({{ "/assets/javascript/pattern.js" | relative_url }}
+ - "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"
+ - "/assets/javascript/pattern.js"
 ---
 ## About
 Zimplizzity unites
