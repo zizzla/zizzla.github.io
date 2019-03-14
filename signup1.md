@@ -17,15 +17,15 @@ layout: default
       <div class="row">
         <!--div class="col-lg"></div>
         <div class="col-lg"-->
-          <form>
+          <form action="https://formspree.io/andersdalen@gmail.com" method="POST">>
             <div class="form-row">
               <div class="form-group col-md">
                 <label for="inputName">Name</label>
-                <input type="text" class="form-control" id="inputNumber" placeholder="Your name">
+                <input type="text" class="form-control" id="inputNumber" name="name" placeholder="Your name">
               </div>
               <div class="form-group col-md">
                 <label for="validationInputEmail">Email</label>
-                <input type="email" class="form-control is-invalid" id="validationInputEmail" placeholder="Email (required)" required>
+                <input type="email" class="form-control is-invalid" id="validationInputEmail" name="_replyto" placeholder="Email (required)" required>
               </div>
             </div>
             <div class="form-row">
@@ -40,8 +40,9 @@ layout: default
               <div class="form-group col-md">
                 <label for="inputCity">City</label>
                 <input type="text" class="form-control" id="inputCity" placeholder="Göteborg">
-              </div>    
+              </div>
             </div>
+            <button type="submit" value="Send" class="btn btn-primary">Submit</button>
           </form>
         </div>
       </div>
