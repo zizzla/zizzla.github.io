@@ -7,7 +7,7 @@ $container-max-widths: (
   xl: 720px
 ) !default;
 
-.jumbotron {
+.jumbotron-fluid {
   background-image: url("/assets/img/background_gunmetal.png");
   background-size: cover;
 }
@@ -36,34 +36,34 @@ $green:   #73A839 !default;
 $teal:    #20c997 !default;
 $cyan:    #2FA4E7 !default;
 
-$brake-light:       #FF0022 !default;
-$gunmetal:     #2A3237 !default;
+$brake-light:   #FF0022 !default;
+$gunmetal:      #2A3237 !default;
 $arsenic:       #384D48 !default;
-$maastricht:          #0B132B !default;
-$rust:       #B56357 !default;
-$max-yellow:        #E8C547 !default;
+$maastricht:    #0B132B !default;
+$rust:          #B56357 !default;
+$max-yellow:    #E8C547 !default;
 $baby-powder:   #FDFFFC !default;
 $kombu-green:   #294936 !default;
 $silver-sand:   #C5C5C5 !default;
 $burgundy:      #840032 !default;
 $harvest-gold:  #E59500 !default;
 
-$primary:       $harvest-gold !default;
+$primary:       $max-yellow !default;
 $secondary:     $gunmetal !default;
 $success:       $arsenic !default;
 $info:          $maastricht !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $baby-powder !default;
+$light:         $silver-sand !default;
 $dark:          #787879 !default;
 
 // Body
 
-$body-color:    $gray-700 !default;
+$body-color:    $light !default;
 
 // Fonts
 
-$headings-color:         $primary !default;
+$headings-color:         $light !default;
 
 // Dropdowns
 
