@@ -42,7 +42,7 @@ layout: default
                 <input type="text" class="form-control" id="inputCity" placeholder="Göteborg">
               </div>
             </div>
-            <button type="submit" value="Send" class="btn btn-primary">Submit</button>
+            <button type="submit" value="Send" class="btn btn-primary btn-block">Submit</button>
           </form>
         </div>
       </div>
