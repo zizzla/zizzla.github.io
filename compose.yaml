@@ -1,0 +1,12 @@
+services:
+  jekyll:
+    image: jekyll/jekyll:latest 
+    container_name: jekyll
+    # stdin_open: true # docker run -i
+    # tty: true        # docker run -t
+    command: jekyll serve --livereload 
+    ports:
+      - 4000:4000
+      - 35729:35729
+    volumes:
+      - .:/srv/jekyll 
