@@ -4,7 +4,7 @@ title:  "Ökade kostnader för fjärrvärmeproduktion"
 date:   2025-03-06 04:27:27 -0600
 categories: jekyll update
 ---
-# BrainFuck is like the DNA of any programming language
+# Kriser är lösningarnas moder
 
 Sedan 2022 har priset på biobränslen ökat med över 90 %.(Se Energimyndighetens statistik Trädbränsle-, torv- och avfallspriser ).
 Över 42 % av fjärrvärmeproduktionen i Sverige är idag helt biobränslebaserad. Ännu mer om även biobaserade i avfallsbränslen räknas in. Situationen har pressat upp
