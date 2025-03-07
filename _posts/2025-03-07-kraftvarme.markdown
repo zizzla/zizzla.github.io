@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Minskad lönsamhet för kraftvärme"
-date: 2025-03-07 12🕧:27 -0600
+date: 2025-03-07 12:30-0600
 categories: jekyll update
 page-author: Fredrik Martinsson
 ---
