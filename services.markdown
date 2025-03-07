@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Services
 permalink: /services/
 published: true
 ---
