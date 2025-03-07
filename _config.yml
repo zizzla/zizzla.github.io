@@ -20,7 +20,8 @@
 
 title: Zizzla Energy
 email: web@zizzla.com
-author.name: Fredrik
+author.name: Fredrik Martinsson
+author.email: fredrik.martinsson@zizzla.com
 description: >- # this means to ignore newlines until "baseurl:"
   Precisionsflex - hållbar, värdeskapande och enkel 
 baseurl: "" # the subpath of your site, e.g. /blog
