@@ -6,7 +6,7 @@ categories: jekyll update
 page-author: Fredrik Martinsson
 ---
 
-# Jonglera med flera marknader och samtidigt utöver dagens uppgifter?
+## Jonglera med flera marknader och samtidigt utöver dagens uppgifter?
 Det är en gedigen uppgift samordna driften med elmarknaden. Hur kommer vi köra anläggningarna imorgon, har vi en bra lastprognos, och har vi lagt bud på marknaden
 som överensstämmer med denna plan? Många mindre bolag har tidigare haft avtal där de inte lagt någon elplan alls utan kört utefter elpriserna som blivit. Den tiden
 är förbi när kostnaderna för obalanser stiger. Samtidigt når dagens hjälpmedel inte hela vägen fram. Steget att då lägga till även balansmarknaden med den lukrativa
