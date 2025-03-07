@@ -32,7 +32,7 @@ Har ert fjärrvärmebolag eller industri redan en elpanna/värmepump? Titta på 
 
 ## Saker att gå igenom vid en nyinvestering av elpanna:
 
-- Finns accumulator?
+- Finns hetvattenackumulator?
 - Finns industrikunder i fjärrvärmenätet?
 - Finns befintligt elnätsabonnemang?
 - Möjlighet till villkorat elnätsavtal eller deltagande på lokal kapacitetsmarknad?
