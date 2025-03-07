@@ -2,7 +2,7 @@
 layout: page
 title: About
 permalink: /about/
-published: false
+published: true
 ---
 Zizzla Energy vill bidra till resurseffektivt och framtidssäkrat energisystem genom att erbjuda Precisionsflex™ som optimerar el- och värmeproduktion för
 fjärrvärmebolag och industrier.
