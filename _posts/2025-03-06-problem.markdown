@@ -6,7 +6,7 @@ categories: jekyll update
 page-author: Fredrik Martinsson
 ---
 
-# Kriser är lösningarnas moder
+## Kriser är lösningarnas moder
 
 Sedan 2022 har priset på biobränslen ökat med över 90 %. [Energimyndighetens statistik](https://www.energimyndigheten.se/statistik/officiell-energistatistik/prisutveckling-inom-energiomradet/tradbransle--och-torvpriser/)
 
