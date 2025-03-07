@@ -4,16 +4,14 @@ title: About
 permalink: /about/
 published: false
 ---
+Zizzla Energy vill bidra till resurseffektivt och framtidssäkrat energisystem genom att erbjuda Precisionsflex™ som optimerar el- och värmeproduktion för
+fjärrvärmebolag och industrier.
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+Vi tror att nyckeln till ett hållbart och pålitligt energisystem ligger i att maximera potentialen hos de resurser som redan finns tillgängliga.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+Genom att koppla upp era produktionsenheter till Zizzlas tjänster kan ni handla på olika marknader. Vi ser vi till att maximera driftnettot samtidigt som ni bidrar
+till elnätets stabilitet. Detta är ett viktigt steg mot en hållbar och elektrifierad framtid.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+Vi förenklar driften för personalen och frigör tid från administrativt krångel, samtidigt som vi ger dem den feedback och de verktyg de behöver för att fatta ännu
+bättre beslut och ha roligare på jobbet.
 
-
-[jekyll-organization]: https://github.com/jekyll
