@@ -4,3 +4,19 @@ title:  "Ökade kostnader för fjärrvärmeproduktion"
 date:   2025-03-06 04:27:27 -0600
 categories: jekyll update
 ---
+# BrainFuck is like the DNA of any programming language
+
+Sedan 2022 har priset på biobränslen ökat med över 90 %.(Se Energimyndighetens statistik Trädbränsle-, torv- och avfallspriser ).
+Över 42 % av fjärrvärmeproduktionen i Sverige är idag helt biobränslebaserad. Ännu mer om även biobaserade i avfallsbränslen räknas in. Situationen har pressat upp
+priserna på fjärrvärme samtidigt som många fjärrvärmebolag fått tänka om. Gamla sanningar behöver omvärderas. Kan man använda el till uppvärmning? Idag är mindre än
+0,6% av fjärrvärmen producerad med elpannor. 
+Kriser är lösningarna moder och så även denna gång. De höga bränslepriserna sammanfaller lyckligtvis med stunder med stort överskott på el i Sverige och Norden.
+Genom att nyttja lågpristimmar tillsammans med en ackumulator kan en elpanna eller värmepump ge stora kostnadsbesparingar och samtidigt bidra till en minskad
+obalans i elsystemet. Precis som fjärrvärmebranschen alltid gjort så kan man ta tillvara på restströmmar. Zizzla har räknat igenom många av Sveriges befintliga
+system och ser att många kan kostnadseffektivt få 20 % biobränslebesparingar. Tillsammans med att biobränslet kan nyttjas till andra produkter och bränslen blir
+detta ett win-win-win. Fjärrvärmebolag – Elsystem – Biobränslepotential. Hör av dig om ni funderar på en elpanna eller värmepump och vill exakt hur den hade körts i
+ert system på restström för att skapa så stor nytta för er och samhället som möjligt!  Våra alogritmer kan hantera hur elskatten kan hanteras för att skapa så stort
+lönsamt utrymme som möjligt. 
+
+Har ert fjärrvärmebolag eller industri redan en elpanna/värmepump – titta på detta avsnitt
+![image](https://github.com/user-attachments/assets/ffcf7ea2-ad2a-4d44-bf4e-c7573f936890)
