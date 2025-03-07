@@ -44,3 +44,11 @@ Saker att gå igenom på vid en nyinvestering av elpanna:
 . Befintlig accumulator?
 . Möjligheter till fjärrstyrning av anläggning?
 
+According to DO, the main sources of complexity of any OO system - are:
+
+. Code and data are mixed
+. Objects are mutable
+. Data is locked in objects as members
+. Code is locked into classes as methods
+
+
