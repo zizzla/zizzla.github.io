@@ -31,9 +31,7 @@ Andra nyttor värdera vid en investering:
 . En extra panna som redundans,
 . Lite underhåll
 . Nära 100 % biobränslefritt på sommaren = skön semester.
-. Minskade lagerytor,
-![image](https://github.com/user-attachments/assets/2c6d4a8a-9c75-4b1a-965f-22f5f26cc910)
-
+. Minskade lagerytor
 
 Saker att gå igenom på vid en nyinvestering av elpanna
 . Industrikunder i fjärrvärmenätet?
@@ -42,5 +40,4 @@ Saker att gå igenom på vid en nyinvestering av elpanna
 . Tillgängligt fack i ställverk?
 . Befintlig accumulator?
 . Möjligheter till fjärrstyrning av anläggning?
-![image](https://github.com/user-attachments/assets/8784f0a5-297b-43ed-a692-71377adcd687)
 
