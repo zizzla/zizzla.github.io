@@ -4,9 +4,11 @@ services:
     container_name: jekyll
     # stdin_open: true # docker run -i
     # tty: true        # docker run -t
-    command: jekyll serve --livereload 
+    # command: bundle update github-pages 
+    # command: bundle install
+    command: jekyll serve --port 8000 --livereload 
     ports:
-      - 4000:4000
+      - 8000:8000
       - 35729:35729
     volumes:
       - .:/srv/jekyll 
