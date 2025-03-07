@@ -8,7 +8,8 @@ page-author: Fredrik Martinsson
 
 # Kriser är lösningarnas moder
 
-Sedan 2022 har priset på biobränslen ökat med över 90 %. (Se Energimyndighetens statistik Trädbränsle-, torv- och avfallspriser).
+Sedan 2022 har priset på biobränslen ökat med över 90 %. [Energimyndighetens statistik](https://www.energimyndigheten.se/statistik/officiell-energistatistik/prisutveckling-inom-energiomradet/tradbransle--och-torvpriser/)
+
 
 Över 42 % av fjärrvärmeproduktionen i Sverige är idag helt biobränslebaserad. Ännu mer om även biobaserade avfallsbränslen räknas in. Situationen har pressat upp priserna på fjärrvärme samtidigt som många fjärrvärmebolag fått tänka om. Gamla sanningar behöver omvärderas. Kan man använda el till uppvärmning? Idag är mindre än 0,6 % av fjärrvärmen producerad med elpannor.
 
