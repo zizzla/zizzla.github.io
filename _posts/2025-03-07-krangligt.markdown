@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Krångligt att hantera flera marknader samtidigt"
-date: 2025-03-07 13:30-0600
+date: 2025-03-07 13:30:00-0600
 categories: jekyll update
 page-author: Fredrik Martinsson
 ---
