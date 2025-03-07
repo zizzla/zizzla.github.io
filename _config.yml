@@ -28,9 +28,13 @@ url: "https://zizzla.github.io" # the base hostname & protocol for your site, e.
 #github_username:  jekyll
 
 # Build settings
-theme: minima
+theme: jekyll-theme-cayman
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-assets
+  - jekyll-archivable
 
 # Exclude from processing.
 # The following items will not be processed, by default.
