@@ -26,8 +26,8 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://zizzla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 #twitter_username: jekyllrb
 #github_username:  jekyll
-author: Fredrik Martinsson
-author.email: fredrik.martinsson@zizzla.com
+site.author.name: Fredrik Martinsson
+site.author.email: fredrik.martinsson@zizzla.com
 
 # Build settings
 # theme: minima
