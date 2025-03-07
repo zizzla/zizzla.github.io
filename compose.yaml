@@ -2,10 +2,8 @@ services:
   jekyll:
     image: jekyll/jekyll:latest 
     container_name: jekyll
-    # stdin_open: true # docker run -i
-    # tty: true        # docker run -t
-    # command: bundle update github-pages 
     # command: bundle install
+    # command: bundle update github-pages 
     command: jekyll serve --port 8000 --livereload 
     ports:
       - 8000:8000
