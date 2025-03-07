@@ -34,21 +34,17 @@ Andra nyttor värdera vid en investering:
 . Lite underhåll
 . Nära 100 % biobränslefritt under sommaren ger en skön semester
 . Minskade lagerytor
+![image](https://github.com/user-attachments/assets/2c6d4a8a-9c75-4b1a-965f-22f5f26cc910)
 
 Saker att gå igenom på vid en nyinvestering av elpanna:
 
-. Industrikunder i fjärrvärmenätet?
+. Finns accumulator?
+. Finns industrikunder i fjärrvärmenätet?
 . Finns befintligt elnätsabonnemang? 
-. Möjlighet till villkorat elnästavtal eller deltagande på  lokal kapacitetsmarknad
+. Möjlighet till villkorat elnästavtal eller deltagande på  lokal kapacitetsmarknad?
 . Tillgängligt fack i ställverk?
-. Befintlig accumulator?
 . Möjligheter till fjärrstyrning av anläggning?
+![image](https://github.com/user-attachments/assets/2c6d4a8a-9c75-4b1a-965f-22f5f26cc910)
 
-According to DO, the main sources of complexity of any OO system - are:
-
-. Code and data are mixed
-. Objects are mutable
-. Data is locked in objects as members
-. Code is locked into classes as methods
 
 
