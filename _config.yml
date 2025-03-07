@@ -17,28 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-<!DOCTYPE html>
-<html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ "/assets/css/style.css" | relative_url }}">
-</head>
-<body>
-    <div class="container">
-        <nav class="sidebar">
-            <ul>
-                <li><a href="{{ "/" | relative_url }}">Hem</a></li>
-                <li><a href="{{ "/om/" | relative_url }}">Om</a></li>
-            </ul>
-        </nav>
-        <main class="content">
-            {{ content }}
-        </main>
-    </div>
-</body>
-</html>
+
 title: Zizzla Energy
 email: web@zizzla.com
 description: >- # this means to ignore newlines until "baseurl:"
