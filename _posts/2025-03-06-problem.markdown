@@ -3,6 +3,7 @@ layout: post
 title:  "Ökade kostnader för fjärrvärmeproduktion"
 date:   2025-03-06 04:27:27 -0600
 categories: jekyll update
+page-author: Fredrik Martinsson
 ---
 # Kriser är lösningarnas moder
 
@@ -27,13 +28,15 @@ lönsamt utrymme som möjligt.
 Har ert fjärrvärmebolag eller industri redan en elpanna/värmepump – titta på detta avsnitt
 ![image](https://github.com/user-attachments/assets/ffcf7ea2-ad2a-4d44-bf4e-c7573f936890)
 
-Andra nyttor värdera vid en investering
+Andra nyttor värdera vid en investering:
+
 . En extra panna som redundans
 . Lite underhåll
-. Nära 100 % biobränslefritt på sommaren = skön semester
+. Nära 100 % biobränslefritt under sommaren = skön semester
 . Minskade lagerytor
 
-Saker att gå igenom på vid en nyinvestering av elpanna
+Saker att gå igenom på vid en nyinvestering av elpanna:
+
 . Industrikunder i fjärrvärmenätet?
 . Finns befintligt elnätsabonnemang? 
 . Möjlighet till villkorat elnästavtal eller deltagande på  lokal kapacitetsmarknad
