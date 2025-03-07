@@ -6,7 +6,7 @@ categories: jekyll update
 page-author: Fredrik Martinsson
 ---
 
-# Färre timmar ska betala av anläggningen
+## Färre timmar ska betala av anläggningen
 
 Sedan 2022 har de lönsamma drifttimmarna för elproduktion minskat med 20 %. Både klimatförändringar och allt mer vind och sol system pekar åt samma håll. Investeringen ska betala av sig på förre timmar. 
 Att missa några dagar med höga elpriser eller köra när det är låga elpriser kan få en stor påverkan på utfallet för hela året. Samtidigt finns hundra andra uppgifter som är viktigare att tänka på för att pannan ska gå överhuvudtaget. 
