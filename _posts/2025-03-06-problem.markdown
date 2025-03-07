@@ -20,7 +20,7 @@ Hör av dig om ni funderar på en elpanna eller värmepump och vill veta exakt h
 
 Har ert fjärrvärmebolag eller industri redan en elpanna/värmepump? Titta på detta avsnitt:
 
-![image](https://github.com/user-attachments/assets/ffcf7ea2-ad2a-4d44-bf4e-c7573f936890)
+![image](/mnt/data/image.png)
 
 ## Andra nyttor att värdera vid en investering:
 
@@ -28,8 +28,6 @@ Har ert fjärrvärmebolag eller industri redan en elpanna/värmepump? Titta på 
 - Lite underhåll
 - Nära 100 % biobränslefritt under sommaren ger en skön semester
 - Minskade lagerytor
-
-![image](https://github.com/user-attachments/assets/2c6d4a8a-9c75-4b1a-965f-22f5f26cc910)
 
 ## Saker att gå igenom vid en nyinvestering av elpanna:
 
@@ -39,7 +37,5 @@ Har ert fjärrvärmebolag eller industri redan en elpanna/värmepump? Titta på 
 - Möjlighet till villkorat elnätsavtal eller deltagande på lokal kapacitetsmarknad?
 - Tillgängligt fack i ställverk?
 - Möjligheter till fjärrstyrning av anläggning?
-
-![image](https://github.com/user-attachments/assets/2c6d4a8a-9c75-4b1a-965f-22f5f26cc910)
 
 
