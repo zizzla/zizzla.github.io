@@ -16,6 +16,7 @@ justeringar beräknas nya planer och med ett enkelt knapptryck maximeras värdet
 att inga orealistiska bud skickas in och att anläggningarna inte påverkas negativt. 
 Vi har utformat ett användarvänligt gränssnitt som följer arbetsgången i kontrollrummet och marknaden. 
 
+[Läs mer om våra tjänster]({{ "/services/" | relative_url }})
 
 
 
