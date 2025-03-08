@@ -1,30 +1,33 @@
 <header class="site-header">
-    <div class="wrapper">
-        <div class="header-left">
-            {%- if site.logo -%}
-                <a href="{{ '/' | relative_url }}">
-                    <img src="{{ site.logo | relative_url }}" alt="Logo">
-                </a>
-            {%- endif -%}
-            <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
-        </div>
+    <div class="wrapper" style="display: flex; align-items: center; justify-content: flex-start;">
+        {%- if site.logo -%}
+            <a href="{{ '/' | relative_url }}">
+                <img src="{{ site.logo | relative_url }}" alt="Logo" style="max-height: 50px; width: auto; margin-right: 15px;">
+            </a>
+        {%- endif -%}
 
-        <div class="header-right">
+        {%- assign default_paths = site.pages | map: "path" -%}
+        {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
+        {%- assign page_titles = site.pages | map: 'title' | compact %}
+        
+        <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+
+        {%- unless page_titles == empty %}
             <nav class="site-nav">
                 <input type="checkbox" id="nav-trigger" class="nav-trigger" />
                 <label for="nav-trigger">
                     <span class="menu-icon fas fa-bars fa-lg"></span>
                 </label>
-
+        
                 <div class="drawer-container">
                     <div class="drawer">
-                        {%- include nav-items.html paths = site.minima.nav_pages | default: site.pages | map: "path" %}
+                        {%- include nav-items.html paths = page_paths %}
                     </div>
                 </div>
                 <div class="slab">
-                    {%- include nav-items.html paths = site.minima.nav_pages | default: site.pages | map: "path" %}
+                    {%- include nav-items.html paths = page_paths %}
                 </div>
             </nav>
-        </div>
+        {%- endunless %}
     </div>
 </header>
