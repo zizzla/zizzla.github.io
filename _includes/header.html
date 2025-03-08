@@ -9,20 +9,22 @@
             <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
         </div>
 
-        <nav class="site-nav">
-            <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-            <label for="nav-trigger">
-                <span class="menu-icon fas fa-bars fa-lg"></span>
-            </label>
+        <div class="header-right">
+            <nav class="site-nav">
+                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+                <label for="nav-trigger">
+                    <span class="menu-icon fas fa-bars fa-lg"></span>
+                </label>
 
-            <div class="drawer-container">
-                <div class="drawer">
+                <div class="drawer-container">
+                    <div class="drawer">
+                        {%- include nav-items.html paths = site.minima.nav_pages | default: site.pages | map: "path" %}
+                    </div>
+                </div>
+                <div class="slab">
                     {%- include nav-items.html paths = site.minima.nav_pages | default: site.pages | map: "path" %}
                 </div>
-            </div>
-            <div class="slab">
-                {%- include nav-items.html paths = site.minima.nav_pages | default: site.pages | map: "path" %}
-            </div>
-        </nav>
+            </nav>
+        </div>
     </div>
 </header>
