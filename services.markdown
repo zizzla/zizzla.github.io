@@ -24,6 +24,6 @@ En av marknadens mest konkurrenskraftiga driftoptimeringsmodeller som kan hanter
 - **Fjärrstyrning**  
   Möjliggör effektiv och säker fjärrstyrning av elpannor som möjliigör 24/7 deltagande på marknaden.  
 
-- **Administrationsgränssnitt**  
+- [**Adminstrationsgränssnintt**](/assets/img/Services_Administration.png)  
   Smidig uppföljning av intäkter, kostnader och produkuktion – allt samlat i ett användarvänligt gränssnitt.  
 
