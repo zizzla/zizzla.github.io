@@ -9,7 +9,7 @@ Zizzla erbjuder en digital plattform som hjälper ditt bolag att gå från vassa
 
 ## Våra tjänster  
 
-- **Produktionsoptimering**  
+- [**Produktionsoptimering**](/assets/img/Services_Optimizer.png)  
 En av marknadens mest konkurrenskraftiga driftoptimeringsmodeller som kan hantera upp till sju marknader samtidigt. Vi fokuserar på värdeskapande istället för dyra programvaror – därför kan vi erbjuda en kraftfull, egenutvecklad optimeringsmotor till ett konkurrenskraftigt pris.  
 
 - **Prognosmotor**  
