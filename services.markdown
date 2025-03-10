@@ -5,7 +5,7 @@ permalink: /services/
 published: true
 ---
 
-Zizzla erbjuder en digital plattform som hjälper ditt bolag att gå från skarpa prognoser på elpris och last till att lägga rätt bud, till rätt pris, vid rätt tillfälle – samtidigt som administrationen minskar.  
+Zizzla erbjuder en digital plattform som hjälper ditt bolag att gå från vassa prognoser på elpris och last till att lägga rätt bud, till rätt pris, vid rätt tillfälle – samtidigt som administrationen minskar.  
 
 ## Våra tjänster  
 
