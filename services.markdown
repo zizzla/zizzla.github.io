@@ -15,7 +15,7 @@ En av marknadens mest konkurrenskraftiga driftoptimeringsmodeller som kan hanter
 - **Prognosmotor**  
   Skräddarsydda spotprisprognoser och lastprognoser som är anpassade efter ditt bolags unika behov.  
 
-- **Budgivningsplattform**  
+- [**Budgivningsplattform**](/assets/img/Services_budgivningsmodul.png)  
   Skapa realistiska bud till el- och balansmarknaden med ett enkelt knapptryck. Rätt tid, rätt storlek och rätt pris – varje gång.  
 
 - **Visualisering**  
