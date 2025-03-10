@@ -16,7 +16,8 @@ En av marknadens mest konkurrenskraftiga driftoptimeringsmodeller som kan hanter
   Skräddarsydda spotprisprognoser och lastprognoser som är anpassade efter ditt bolags unika behov.  
 
 - [**Budgivningsplattform**](/assets/img/Services_budgivningsmodul.png)  
-  Skapa realistiska bud till el- och balansmarknaden med ett enkelt knapptryck. Rätt tid, rätt storlek och rätt pris – varje gång.  
+  Skapa realistiska bud till el- och balansmarknaden med ett enkelt knapptryck. Rätt tid, rätt storlek och rätt pris – varje gång. 
+(/assets/img/Services_budgivningsmodul_mfrr.png)   
 
 - **Visualisering**  
   Få en tydlig överblick över data och beslutsunderlag genom intuitiva grafer och dashboards.  
