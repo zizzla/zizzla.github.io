@@ -16,7 +16,7 @@ Genom att Zizzla kopplat ihop den traditionella driftoptimeringen med den operat
 
 Vi genererar automatiskt budstegar till marknaden och kopplar upp oss mot marknaden. Ni korrigerar bara vilka pannor som är drift kommande dygn så fixar Zizzla Operations resten. 
 
-Genom att hela tiden få en bra underlag sparar ni tid på uppgiften men framförallt är ni med på marknaden till rätt kostnad vid rätt tillfälle! 
+Genom att hela tiden få en bra underlag sparar ni tid på uppgiften men framförallt är ni med på marknaden till rätt pris, rätt storlek och vid rätt tillfälle! 
 Missarna blir färre och ni har gett er själva möjligheten att ge ägaren avkastning på den stora investeringen som ett kraftvärmeverk innebär.
 
 [Läs mer om våra tjänster]({{ "/services/" | relative_url }})
