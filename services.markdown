@@ -23,7 +23,7 @@ En av marknadens mest konkurrenskraftiga driftoptimeringsmodeller som kan hanter
   Få en tydlig överblick över data och beslutsunderlag genom intuitiva grafer och dashboards.  
 
 - **Fjärrstyrning**  
-  Effektiv och säker schemaläggning av elpannedrift som möjliigör 24/7 deltagande på marknaden.  
+  Effektiv och säker automation av schemaläggare till elpannedrift. Förenklar 24/7 deltagande på marknaden.  
 
 - [**Adminstrationsgränssnintt**](/assets/img/Services_Administration.png)  
   Smidig uppföljning av intäkter, kostnader och produkuktion – allt samlat i ett användarvänligt gränssnitt.  
