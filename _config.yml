@@ -39,6 +39,9 @@ plugins:
   - jekyll-sitemap
   - jekyll-archivable
   - jekyll-seo-tag
+  - jekyll-redirect-from
+  - jekyll-minifier
+  - jekyll-autoprefixer
 
 minima: 
   # Minima skin selection.
