@@ -2,7 +2,7 @@
 layout: post
 title: "Svårt att hantera flera marknader samtidigt"
 date: 2025-03-07
-categories: jekyll update
+categories: zizzla
 page-author: Fredrik Martinsson
 ---
 
