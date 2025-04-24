@@ -7,7 +7,7 @@
       {{ site.email | escape }}
     </a>
 
-    <ul class="navbar-nav flex-row flex-wrap ms-sm-auto">
+    <ul class="navbar-nav flex-row flex-wrap justify-content-end">
       {%- include nav-items.html paths = page_paths %}
       <li class="nav-item">
         <a class="nav-link text-body">© {{ site.time | date: '%Y' }} Zizzla Energy AB</a>
