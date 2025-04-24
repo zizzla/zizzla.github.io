@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About
+title: Om oss
 permalink: /about/
 published: true
 ---

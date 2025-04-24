@@ -3,7 +3,8 @@ services:
     image: jekyll/jekyll:latest 
     container_name: jekyll
     # command: bundle install
-    # command: bundle update github-pages 
+    # command: bundle add bootstrap webrick
+    # command: bundle update
     command: jekyll serve --port 8000 --livereload 
     ports:
       - 8000:8000
