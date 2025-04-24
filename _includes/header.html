@@ -1,33 +1,8 @@
-<header class="site-header">
-    <div class="wrapper" style="display: flex; align-items: center; justify-content: flex-start;">
-        {%- if site.logo -%}
-            <a href="{{ '/' | relative_url }}">
-                <img src="{{ site.logo | relative_url }}" alt="Logo" style="max-height: 50px; width: auto; margin-right: 15px;">
-            </a>
-        {%- endif -%}
+<header class="navbar navbar-expand-sm navbar-light bd-navbar sticky-top bg-white border-bottom" style="--bs-bg-opacity: .95;">
+  {%- assign default_paths = site.pages | map: "path" -%}
+  {%- assign page_titles = site.pages | map: 'title' | compact %}
 
-        {%- assign default_paths = site.pages | map: "path" -%}
-        {%- assign page_paths = site.minima.nav_pages | default: default_paths -%}
-        {%- assign page_titles = site.pages | map: 'title' | compact %}
-        
-        <a class="site-title" rel="author" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+  {%- assign page_paths = site.zizzla.nav_pages | default: default_paths -%}
+  {%- include nav.html -%}
 
-        {%- unless page_titles == empty %}
-            <nav class="site-nav" style="margin-left: auto;">
-                <input type="checkbox" id="nav-trigger" class="nav-trigger" />
-                <label for="nav-trigger">
-                    <span class="menu-icon fas fa-bars fa-lg"></span>
-                </label>
-        
-                <div class="drawer-container">
-                    <div class="drawer">
-                        {%- include nav-items.html paths = page_paths %}
-                    </div>
-                </div>
-                <div class="slab">
-                    {%- include nav-items.html paths = page_paths %}
-                </div>
-            </nav>
-        {%- endunless %}
-    </div>
 </header>

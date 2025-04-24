@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Services
+title: Tjänster
 permalink: /services/
 published: true
 ---
