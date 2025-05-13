@@ -1,8 +1,13 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
+title:  "Welcome to post!"
+subtitle: "Punchy takeaway"
 date:   2025-03-06 04:27:27 -0600
-categories: zizzla
+categories: test
+author:
+  name: Mpna Mockup
+  head: /assets/img/maskot.png
+  role: Maskot
 published: false
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
