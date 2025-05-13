@@ -1,0 +1,45 @@
+---
+layout: post
+title: "Ökade kostnader för fjärrvärmeproduktion"
+subtitle: "Kriser är lösningarnas moder"
+image: /assets/img/Post_2025-03-06.jpeg
+date: 2025-03-06 04:27:27 -0600
+categories: fjärrvärme
+author:
+  name: Fredrik Martinsson
+  head: /assets/img/fredrik_martinsson.jpeg
+  role: Utvecklingschef
+---
+
+Sedan 2022 har priset på biobränslen ökat med över 90 %. [Energimyndighetens statistik](https://www.energimyndigheten.se/statistik/officiell-energistatistik/prisutveckling-inom-energiomradet/tradbransle--och-torvpriser/) Över 42 % av fjärrvärmeproduktionen i Sverige är idag helt biobränslebaserad enligt [Energiföretagen Sveriges statstik](https://www.energiforetagen.se/statistik/fjarrvarmestatistik/tillford-energi/). 
+
+Ännu mer om även biobaserade avfallsbränslen räknas in. Situationen har pressat upp priserna på fjärrvärme till kund samtidigt som många fjärrvärmebolag fått tänka om. Gamla sanningar behöver omvärderas. Kan man använda el till uppvärmning? Idag är mindre än 0,6 % av fjärrvärmen producerad med elpannor.
+
+Kriser är lösningarnas moder och så även denna gång. De höga bränslepriserna sammanfaller lyckligtvis med stunder med stort överskott på el i Sverige och Norden. Genom att nyttja lågpristimmar tillsammans med en ackumulator kan en elpanna eller värmepump ge stora kostnadsbesparingar och samtidigt bidra till en minskad obalans i elsystemet. Precis som fjärrvärmebranschen alltid gjort så kan man ta tillvara på restströmmar. Zizzla har räknat igenom många av Sveriges befintliga system och ser att många kan kostnadseffektivt få 20 % biobränslebesparingar.
+
+När biobränslet sen kan nyttjas till andra produkter och bränslen blir detta ett win-win-win: **Fjärrvärmebolag – Elsystem – Biobränslepotential**.
+
+Hör av dig om ni funderar på en elpanna eller värmepump och vill veta exakt hur den hade körts i ert system på restström för att skapa så stor nytta för er och samhället som möjligt! Våra algoritmer kan hantera hur elskatten kan hanteras för att skapa så stort lönsamt utrymme som möjligt.
+
+Har ert fjärrvärmebolag eller industri redan en elpanna/värmepump? Inom kort kommer ett nytt inlägg till er
+
+![image](/assets/img/Post_2025-03-06.jpeg)
+
+## Andra nyttor att värdera vid en investering:
+
+- En extra panna som redundans
+- Lite underhåll
+- Nära 100 % biobränslefritt under sommaren ger en skön semester
+- Minskade lagerytor
+
+## Saker att gå igenom vid en nyinvestering av elpanna:
+
+- Finns hetvattenackumulator?
+- Finns industrikunder i fjärrvärmenätet?
+- Finns befintligt elnätsabonnemang?
+- Möjlighet till villkorat elnätsavtal eller deltagande på lokal kapacitetsmarknad?
+- Tillgängligt fack i ställverk?
+- Möjligheter till fjärrstyrning av anläggning?
+
+Zizzla kan utvärdera ert system och tar fram en plan för implementation
+[Läs mer om våra tjänster]({{ "/services/" | relative_url }})

@@ -1,34 +1,17 @@
-<div class="bg-light">
-  <div class="container">
+<div class="px-3">
+  <footer class="flex items-center align-items-center py-0 mt-3 border-top">
+    <a href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }}">
+      <img src="{{ site.logo | relative_url }}" width="24" height="24" class="" >
+    </a>
+    <a class="nav-link text-normal ps-1 me-auto u-email" href="mailto:{{ site.email }}">
+      {{ site.email | escape }}
+    </a>
 
-    <p class="h5 mb-3">{{ site.title | escape }}</p>
-
-    <div class="row">
-
-      <div class="col-sm">
-        <ul class="list-unstyled">
-          <li>
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-          </li>
-          {%- if site.email -%}
-            <li>
-              <a href="mailto:{{ site.email }}">
-                {{ site.email }}
-              </a>
-            </li>
-          {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="col-sm text-right">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-
-    </div>
-
-  </div>
+    <ul class="bg-white">
+      <li class="py-4">
+        <a class="text-normal">© {{ site.time | date: '%Y' }} Zizzla Energy AB</a>
+      </li>
+    </ul>
+      
+  </footer>
 </div>

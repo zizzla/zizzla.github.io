@@ -1,0 +1,15 @@
+services:
+  jekyll:
+    image: bretfisher/jekyll-serve
+    # image: jekyll/jekyll:latest 
+    container_name: jekyll
+    ports:
+      - 4000:4000
+      # - 35729:35729
+    volumes:
+      - .:/site
+      # - .:/srv/jekyll 
+    # command: bundle install
+    # command: bundle update
+    # command: bundle exec update
+    # command: jekyll serve --port 4000 --livereload 
