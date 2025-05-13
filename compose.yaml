@@ -1,13 +1,15 @@
 services:
   jekyll:
-    image: jekyll/jekyll:latest 
+    image: bretfisher/jekyll-serve
+    # image: jekyll/jekyll:latest 
     container_name: jekyll
-    # command: bundle install
-    # command: bundle add bootstrap webrick
-    # command: bundle update
-    command: jekyll serve --port 8000 --livereload 
     ports:
-      - 8000:8000
-      - 35729:35729
+      - 4000:4000
+      # - 35729:35729
     volumes:
-      - .:/srv/jekyll 
+      - .:/site
+      # - .:/srv/jekyll 
+    # command: bundle install
+    # command: bundle update
+    # command: bundle exec update
+    # command: jekyll serve --port 4000 --livereload 

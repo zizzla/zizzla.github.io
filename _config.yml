@@ -1,52 +1,23 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
-#
-# If you need help with YAML syntax, here are some quick references for you: 
-# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
-# https://learnxinyminutes.com/docs/yaml/
-#
-#Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-author:
-  name: Fredrik Martinsson
-  email: fredrik.martinsson@zizzla.com
-
 title: Zizzla
 email: nyfiken@zizzla.com
 description: >- # this means to ignore newlines until "baseurl:"
   Precisionsflex - hållbar, värdeskapande och enkel 
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://zizzla.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-#twitter_username: jekyllrb
-#github_username:  jekyll
-logo: "/assets/img/logo.png"
+url: "https://zizzla.com"
+baseurl: ""
+logo: '<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" version="1.2"><g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="square" stroke-linejoin="bevel"><circle r="30" stroke-linejoin="miter" stroke-width="3" transform="matrix(10 0 0 -10 1485 1050)"/><path fill="#000" stroke="none" d="M1540 916h-204 204m-204-31h298-298m298 0a16 16 0 0 1 5 31 16 16 0 0 0-5-31m5 31-209 69 209-69m-209 69h204-204m204 0a16 16 0 0 1 5 31 16 16 0 0 0-5-31m5 31-209 68 209-68m-209 68h204-204m204 0a16 16 0 0 1 5 31 16 16 0 0 0-5-31m5 31-209 69 209-69m-209 69h204-204m204 31h-298 298m-298 0a16 16 0 0 1-5-31 16 16 0 0 0 5 31m-5-31 209-69-209 69m209-69h-204 204m-204 0a16 16 0 0 1-5-31 16 16 0 0 0 5 31m-5-31 209-68-209 68m209-68h-204 204m-204 0a16 16 0 0 1-5-31 16 16 0 0 0 5 31m-5-31 209-69-209 69"/><path fill="#000" stroke="none" d="M1540 916h-204a16 16 0 0 1 0-31h298a16 16 0 0 1 5 31l-209 69h204a16 16 0 0 1 5 31l-209 68h204a16 16 0 0 1 5 31l-209 69h204a16 16 0 0 1 0 31h-298a16 16 0 0 1-5-31l209-69h-204a16 16 0 0 1-5-31l209-68h-204a16 16 0 0 1-5-31l209-69"/><path fill="#000" stroke="none" d="m1540 916-209 69a16 16 0 0 0 5 31h204l-209 68a16 16 0 0 0 5 31h204l-209 69a16 16 0 0 0 5 31h298a16 16 0 0 0 0-31h-204l209-69a16 16 0 0 0-5-31h-204l209-68a16 16 0 0 0-5-31h-204l209-69a16 16 0 0 0-5-31h-298a16 16 0 0 0 0 31h204"/></g></svg>'
 
-# sass: 
-#   load_paths:
-#     - /srv/jekyll/vendor/bundle/ruby/3.1.0/gems/bootstrap-5.3.3/assets/stylesheets
-# js:
-#   load_paths:
-#     - /srv/jekyll/vendor/bundle/ruby/3.1.0/gems/bootstrap-5.3.3/assets/javascripts
+author:
+  name: Fredrik Martinsson
+  email: fredrik.martinsson@zizzla.com
 
 # Build settings
-plugins:
-  - jekyll-feed
-  - jekyll-sitemap
-  - jekyll-archivable
-  - jekyll-seo-tag
-  - jekyll-redirect-from
-  - jekyll-minifier
-  - jekyll-autoprefixer
+# plugins:
+#   - jekyll-feed
+#   - jekyll-sitemap
+#   - jekyll-seo-tag
+#   - jekyll-redirect-from
+#   - jekyll-minifier
+#   - jekyll-autoprefixer
 
 zizzla:
   nav_pages:

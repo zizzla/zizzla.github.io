@@ -1,16 +1,15 @@
 <div class="px-3">
-  <footer class="d-flex flex justify-content-between align-items-center py-0 mt-3 border-top">
+  <footer class="flex items-center align-items-center py-0 mt-3 border-top">
     <a href="{{ '/' | relative_url }}" aria-label="{{ site.title | escape }}">
-      <img src="{{ site.logo | relative_url }}" width="24" height="24" class="d-block d-inline-block" >
+      <img src="{{ site.logo | relative_url }}" width="24" height="24" class="" >
     </a>
-    <a class="nav-link text-body ps-1 me-auto u-email" href="mailto:{{ site.email }}">
+    <a class="nav-link text-normal ps-1 me-auto u-email" href="mailto:{{ site.email }}">
       {{ site.email | escape }}
     </a>
 
-    <ul class="navbar-nav flex-row flex-wrap justify-content-end">
-      {%- include nav-items.html paths = page_paths %}
-      <li class="nav-item">
-        <a class="nav-link text-body">© {{ site.time | date: '%Y' }} Zizzla Energy AB</a>
+    <ul class="bg-white">
+      <li class="py-4">
+        <a class="text-normal">© {{ site.time | date: '%Y' }} Zizzla Energy AB</a>
       </li>
     </ul>
       
