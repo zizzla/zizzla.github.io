@@ -4,7 +4,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Precisionsflex - hållbar, värdeskapande och enkel 
 url: "https://zizzla.com"
 baseurl: ""
-logo: '<svg xmlns="http://www.w3.org/2000/svg" baseProfile="tiny" version="1.2"><g fill="none" fill-rule="evenodd" stroke="#000" stroke-linecap="square" stroke-linejoin="bevel"><circle r="30" stroke-linejoin="miter" stroke-width="3" transform="matrix(10 0 0 -10 1485 1050)"/><path fill="#000" stroke="none" d="M1540 916h-204 204m-204-31h298-298m298 0a16 16 0 0 1 5 31 16 16 0 0 0-5-31m5 31-209 69 209-69m-209 69h204-204m204 0a16 16 0 0 1 5 31 16 16 0 0 0-5-31m5 31-209 68 209-68m-209 68h204-204m204 0a16 16 0 0 1 5 31 16 16 0 0 0-5-31m5 31-209 69 209-69m-209 69h204-204m204 31h-298 298m-298 0a16 16 0 0 1-5-31 16 16 0 0 0 5 31m-5-31 209-69-209 69m209-69h-204 204m-204 0a16 16 0 0 1-5-31 16 16 0 0 0 5 31m-5-31 209-68-209 68m209-68h-204 204m-204 0a16 16 0 0 1-5-31 16 16 0 0 0 5 31m-5-31 209-69-209 69"/><path fill="#000" stroke="none" d="M1540 916h-204a16 16 0 0 1 0-31h298a16 16 0 0 1 5 31l-209 69h204a16 16 0 0 1 5 31l-209 68h204a16 16 0 0 1 5 31l-209 69h204a16 16 0 0 1 0 31h-298a16 16 0 0 1-5-31l209-69h-204a16 16 0 0 1-5-31l209-68h-204a16 16 0 0 1-5-31l209-69"/><path fill="#000" stroke="none" d="m1540 916-209 69a16 16 0 0 0 5 31h204l-209 68a16 16 0 0 0 5 31h204l-209 69a16 16 0 0 0 5 31h298a16 16 0 0 0 0-31h-204l209-69a16 16 0 0 0-5-31h-204l209-68a16 16 0 0 0-5-31h-204l209-69a16 16 0 0 0-5-31h-298a16 16 0 0 0 0 31h204"/></g></svg>'
+logo: "/assets/img/logo.png"
 
 author:
   name: Fredrik Martinsson
