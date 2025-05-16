@@ -2,13 +2,14 @@
 layout: post
 title: "Ökade kostnader för fjärrvärmeproduktion"
 subtitle: "Kriser är lösningarnas moder"
-image: /assets/img/Post_2025-03-06.jpeg
+image: "/assets/img/Post_2025-03-06.jpeg"
 date: 2025-03-06 04:27:27 -0600
 categories: fjärrvärme
 author:
   name: Fredrik Martinsson
-  head: /assets/img/fredrik_martinsson.jpeg
+  head: "/assets/img/fredrik_martinsson.jpeg"
   role: Utvecklingschef
+  email: fredrik.martinsson@zizzla.com
 ---
 
 Sedan 2022 har priset på biobränslen ökat med över 90 %. [Energimyndighetens statistik](https://www.energimyndigheten.se/statistik/officiell-energistatistik/prisutveckling-inom-energiomradet/tradbransle--och-torvpriser/) Över 42 % av fjärrvärmeproduktionen i Sverige är idag helt biobränslebaserad enligt [Energiföretagen Sveriges statstik](https://www.energiforetagen.se/statistik/fjarrvarmestatistik/tillford-energi/). 
