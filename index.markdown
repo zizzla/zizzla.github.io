@@ -5,7 +5,7 @@ permalink: /
 published: true
 ---
 
-<div class="flex flex-col px-4">
+<div class="flex flex-col">
 
     <div class="relative visible md:invisible">
         <div class="relative"><span>
@@ -76,18 +76,20 @@ published: true
     </ul>
 </div>
 
-<div class="flex flex-row">
-  <div class="mx-auto max-w-7xl px-6 lg:px-8">
-    <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3">
-      
-        {% if site.paginate %}
-            {% assign posts = paginator.posts %}
-        {% else %}
-            {% assign posts = site.posts %}
-        {% endif %}
+<div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
 
-        {%- include post-items.html posts = posts %}
+<!-- <div class="flex flex-row">
+    <div class="mx-auto max-w-7xl lg:px-2">
+        <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"> -->
         
-    </div>
-  </div>
+            {% if site.paginate %}
+                {% assign posts = paginator.posts %}
+            {% else %}
+                {% assign posts = site.posts %}
+            {% endif %}
+
+            {%- include post-items.html posts = posts %}
+            
+        <!-- </div>
+    </div> -->
 </div>

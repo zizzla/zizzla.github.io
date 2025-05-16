@@ -2,7 +2,7 @@
   {%- assign hyperpage = site.pages | where: "path", path | first -%}
   {%- if hyperpage.title %}
     <!-- <li class="py-4"><a href="{{ hyperpage.url | relative_url }}" class="w-full  text-2xl font-bold text-primary focus:underline dark:text-primary-dark" aria-current="page">{{ hyperpage.title | escape }}</a></li> -->
-    <li class="py-4"><a href="{{ hyperpage.url | relative_url }}" class="w-full text-2xl text-bold text-indigo-600 hover:text-indigo-900 font-medium text-on-surface focus:underline dark:text-on-surface-dark">{{ hyperpage.title | escape }}</a></li>
+    <li class="py-4"><a href="{{ hyperpage.url | relative_url }}" class="w-full text-2xl text-bold text-indigo-600 hover:text-indigo-900 font-normal text-on-surface focus:underline dark:text-on-surface-dark">{{ hyperpage.title | escape }}</a></li>
 
     {%- endif -%}
 {%- endfor -%}

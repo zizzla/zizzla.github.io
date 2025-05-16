@@ -1,15 +1,12 @@
-<nav x-data="{ mobileMenuIsOpen: false }" x-on:click.away="mobileMenuIsOpen = false" class="flex items-center text-center justify-between px-4 py-4" aria-label="ui menu">
+<nav x-data="{ mobileMenuIsOpen: false }" x-on:click.away="mobileMenuIsOpen = false" class="flex items-center text-center justify-between py-4" aria-label="ui menu">
 	<div class="flex justify-start items-center">
     <!-- Brand Logo -->
     <img class="h-6 w-auto" src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}"> 
     <a class="ps-1 font-bold text-primary dark:text-primary-dark text-on-surface-strong dark:text-on-surface-dark-strong" href="{{ '/' | relative_url }}">
       {{ site.title | escape }}
     </a>
-    <!-- <a href="#" class="text-2xl font-bold text-on-surface-strong dark:text-on-surface-dark-strong">
-      <span>Peng<span class="text-primary dark:text-primary-dark">ui</span>n</span>
-    </a> -->
   </div>
-  <div class="flex justify-end"></div>
+  <div class="flex justify-end">
     <!-- Desktop Menu -->
     <ul class="hidden items-center gap-4 md:flex">
       {%- include nav-items-desktop.html paths = page_paths %}

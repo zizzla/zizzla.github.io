@@ -1,40 +1,68 @@
 ---
 layout: base
 ---
-<article class="px-3 post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+{%- assign date_format = site.date_format | default: "%b %-d, %Y" -%}
 
-  <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
-    <div class="post-meta">
-      {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-      {% assign pdate = page.date | date_to_xmlschema %}
-      {%- if page.modified_date %}<span class="meta-label">Published:</span>{% endif %}
-      <time class="dt-published" datetime="{{ pdate }}" itemprop="datePublished">
-        {{ pdate | date: date_format }}
-      </time>
-      {%- if page.modified_date -%}
-        <span class="bullet-divider">•</span>
-        <span class="meta-label">Updated:</span>
-        {%- assign mdate = page.modified_date | date_to_xmlschema %}
-        <time class="dt-modified" datetime="{{ mdate }}" itemprop="dateModified">
-          {{ mdate | date: date_format }}
-        </time>
-      {%- endif -%}
-      {%- if page.author %}
-      <div class="{% unless page.modified_date %}force-inline {% endunless %}post-authors">
-        {%- for author in page.author %}
-          <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-            <span class="p-author h-card" itemprop="name">{{ author }}</span></span>
-          {%- if forloop.last == false %}, {% endif -%}
-        {% endfor %}
+<article itemscope itemtype="http://schema.org/BlogPosting"></article>
+  <div class="min-h-screen bg-gray-50 py-8 flex flex-col justify-center relative overflow-hidden lg:py-12">
+    <div class="relative w-full px-6 py-12 bg-white shadow-xl shadow-slate-700/10 ring-1 ring-gray-900/5 md:max-w-3xl md:mx-auto lg:max-w-4xl lg:pt-16 lg:pb-28">
+
+      <div class="mt-8 prose prose-slate mx-auto lg:prose-lg">
+        
+        {%- if page.subtitle %}
+        <p class="text-base/7 font-semibold text-teal-700">
+          {{ page.subtitle | escape }}
+        </p>
+        {%- endif %}
+        
+        {%- if page.title %}
+        <h1 class="mt-2 text-4xl font-semibold tracking-tight text-pretty text-gray-900 sm:text-5xl">
+          {{ page.title | escape }}
+        </h1>      
+        {%- endif %}
+        
+        {%- if page.excerpt %}
+        <p class="lead">
+          {{ page.excerpt | strip_html }}
+        </p>
+        {%- endif %}
+
+        {{ content }}
+
+        {%- if page.author %}
+        <div class="not-prose">
+          <div class="relative mt-8 flex items-center gap-x-4">
+            <img src="{{ page.author.head }}" alt="" class="size-10 rounded-full bg-gray-50">
+            <div class="text-sm/6">
+              <p class="font-semibold text-gray-900">
+                <span class="absolute inset-0"></span>
+                {{ page.author.name | escape }}
+              </p>
+              {%- if page.author.role %}
+              <p class="text-gray-600">{{ page.author.role }}</p>
+              {%- endif %}
+            </div>
+          </div>
+
+          <div class="flex items-center gap-x-4 text-xs">
+            {% if page.date %}
+            <time datetime="{{ post.date | date: date_format }}" class="text-gray-500">
+              {{ page.date | date: date_format }}
+            </time>
+            {% endif %}
+            {% if page.categories %}
+              {% for category in page.categories %}
+                <a href="{{ category | escape }}" class="relative z-10 rounded-full bg-gray-50 px-3 py-1.5 font-medium text-gray-600 hover:bg-gray-100">
+                  {{ category | capitalize }}
+                </a>
+              {% endfor %}
+            {% endif %}
+          </div>
+        </div>
+        {%- endif %}
+
       </div>
-      {%- endif %}
     </div>
-  </header>
-
-  <div class="post-content e-content" itemprop="articleBody">
-    {{ content }}
   </div>
-
   <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
 </article>
