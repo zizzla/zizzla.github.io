@@ -9,7 +9,7 @@ published: true
 
     <div class="relative visible md:invisible">
         <div class="relative"><span>
-            <img src="{{site.baseurl}}/assets/img/jonglering.jpeg" class="absolute w-75 rotate-14 opacity-25 inset-x-0 shadow-xl bg-white w-1/2 mx-auto rounded">
+            <img src="{{site.baseurl}}/assets/img/glada_bollar.png" class="absolute w-75 rotate-14 opacity-25 inset-x-0 shadow-xl bg-white w-1/2 mx-auto rounded">
         </span></div>
     </div>
 
@@ -17,32 +17,32 @@ published: true
 
         <div class="relative invisible md:visible w-0 md:w-96"><span></span>
             <div class="relative pt-5 me-5"><span>
-                <img src="{{site.baseurl}}/assets/img/jonglering.jpeg" class="absolute rotate-14 shadow-xl bg-white mx-auto rounded">
+                <img src="{{site.baseurl}}/assets/img/glada_bollar.png" class="absolute rotate-5 shadow-xl bg-white mx-auto rounded">
             </span></div>
         </div>
 
         <!-- <div class="col-12 col-md-8"> -->
         <div class="relative pt-4 w-full "><span>
             <h3 class="justify-start text-4xl">Jonglerar du <strong>säker drift</strong> med krav på <strong>högre avkastning</strong>?</h3>
-            <h4 class="text-2xl font-light">Det behöver inte vara så svårt.</h4>
+            <h4 class="text-2xl font-light">Det behöver inte vara så svårt. Med Zizzla får du ett optimalt körschema för varje situation och marknad.</h4>
         </span></div>
         <!-- </div> -->
     </div>
 
     <div class="flex flex-row-reverse pt-20">
 
-        <div class="relative invisible md:visible w-0 md:w-96"><span></span>
+        <!-- <div class="relative invisible md:visible w-0 md:w-96"><span></span>
             <div class="relative pt-5 me-3"><span>
                 <img src="{{site.baseurl}}/assets/img/glada_bollar.png" class="absolute rotate-5 shadow-xl bg-white mx-auto rounded">
             </span></div>
-        </div>
+        </div> -->
 
-        <!-- <div class="col-11 col-md-8"> -->
+        <!-- <div class="col-11 col-md-8">
         <div class="relative pt-4 w-full"><span>
             <h3 class="text-4xl">Vill du <strong>köra hållbart</strong> och samtidigt pricka <strong>alla pristoppar</strong>?</h3>
-            <h4 class="text-2xl font-light">Zizzla kompromissar, du kontrollerar.</h4>
+            <h4 class="text-2xl font-light">Med ett optimalt körschema för varje situation och marknad. Med Zizzla som navigatör kan du fokusera på driften.</h4>
         </span></div>
-        <!-- </div> -->
+        </div> -->
 
     </div>
     
@@ -55,22 +55,22 @@ published: true
     <ul role="list" class="px-3 mt-4 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0">
         <li>
             <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0 px-0">
-                <li><img alt="Tranås energi" style="color:transparent" src="{{site.baseurl}}/assets/img/logo_tranasenergi.png" class="w-36 drop-shadow-xl/25"></li>
-                <li><img alt="Njudung energi" src="{{site.baseurl}}/assets/img/logo_njudung.svg" class="w-36 drop-shadow-xl/25"></li>
-                <li><img alt="Nässjö energi" src="{{site.baseurl}}/assets/img/logo_nassjo.svg" class="w-36 drop-shadow-xl/25"></li>
+                <li><img alt="Tranås energi" style="color:transparent" src="{{site.baseurl}}/assets/img/logo_tranasenergi.png" class="w-36"></li>
+                <li><img alt="Njudung energi" src="{{site.baseurl}}/assets/img/logo_njudung.svg" class="w-36"></li>
+                <li><img alt="Nässjö energi" src="{{site.baseurl}}/assets/img/logo_nassjo.svg" class="w-36"></li>
             </ul>
         </li>
         <li>
             <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0 px-0">
-                <li><img alt="Vimmerby energi och miljö" src="{{site.baseurl}}/assets/img/logo_vimmerby.svg" class="w-36 drop-shadow-xl/25"></li>
-                <li><img alt="Eksjö energi" src="{{site.baseurl}}/assets/img/logo_eksjo.svg" class="w-36 drop-shadow-xl/25"></li>
+                <li><img alt="Vimmerby energi och miljö" src="{{site.baseurl}}/assets/img/logo_vimmerby.svg" class="w-36"></li>
+                <li><img alt="Eksjö energi" src="{{site.baseurl}}/assets/img/logo_eksjo.svg" class="w-36"></li>
             </ul>
         </li>
         <li>
             <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0 px-0">
-                <li><img alt="Adven" src="{{site.baseurl}}/assets/img/logo_adven.svg" class="w-36 drop-shadow-xl/25"></li>
-                <li><img alt="Novotek" src="{{site.baseurl}}/assets/img/logo_novotek.svg" class="w-36 drop-shadow-xl/25"></li>
-                <li><img alt="Almi" src="{{site.baseurl}}/assets/img/logo_almi.svg" class="w-36 drop-shadow-xl/25"></li>
+                <li><img alt="Adven" src="{{site.baseurl}}/assets/img/logo_adven.svg" class="w-36"></li>
+                <li><img alt="Novotek" src="{{site.baseurl}}/assets/img/logo_novotek.svg" class="w-36"></li>
+                <li><img alt="Almi" src="{{site.baseurl}}/assets/img/logo_almi.svg" class="w-36"></li>
             </ul>
         </li>
     </ul>
