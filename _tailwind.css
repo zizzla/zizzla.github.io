@@ -1,2 +1,43 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@theme {
+  /* Brand Colors */
+  --color-navy: #060644;
+  --color-spring: #02E677;
+  --color-purple: #6E077D;
+  --color-pink: #F40755;
+  --color-yellow: #EFFF00;
+
+  /* Fonts */
+  --font-heading: "Outfit", serif;
+  --font-body: "Outfit", sans-serif;
+}
+
+/* Base styles to ensure fonts and background apply globally */
+@layer base {
+  body {
+    @apply bg-navy text-white font-body antialiased;  
+}
+  h1, h2, h3, h4 {
+    @apply font-heading;
+  }
+}
+
+/* Logo scrolling from right to left  */
+@keyframes scroll {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.animate-scroll {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+  gap: var(--logo-gap, 6rem);
+}
+
+/* Optional: Pause on hover so people can actually read the logos */
+.animate-scroll:hover {
+  animation-play-state: paused;
+}

@@ -5,75 +5,83 @@ permalink: /
 published: true
 ---
 
-<div class="flex flex-col">
+<div class="relative min-h-screen bg-navy flex flex-col">
+    <section class="relative pt-46 flex flex-col min-h-screen overflow-hidden">
+    
+        <div class="absolute inset-0 pointer-events-none flex justify-center">
+            <div class="relative w-full max-w-9xl h-full">
+                
+                <div class="absolute inset-0 z-0">
+                    <img src="{{site.baseurl}}/assets/img/alex_octopus.png" 
+                        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 min-h-full max-w-full object-cover opacity-100">
+                </div>
 
-    <div class="relative visible md:invisible">
-        <div class="relative"><span>
-            <img src="{{site.baseurl}}/assets/img/glada_bollar.png" class="absolute w-75 rotate-14 opacity-25 inset-x-0 shadow-xl bg-white w-1/2 mx-auto rounded">
-        </span></div>
-    </div>
-
-    <div class="flex flex-row-reverse">
-
-        <div class="relative invisible md:visible w-0 md:w-96"><span></span>
-            <div class="relative pt-5 me-5"><span>
-                <img src="{{site.baseurl}}/assets/img/glada_bollar.png" class="absolute rotate-5 shadow-xl bg-white mx-auto rounded">
-            </span></div>
+                <div class="absolute inset-0 z-10 mix-blend-overlay opacity-100">
+                    <svg width="100%" height="100%" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg" class="w-full h-full">
+                        <filter id="seamless-stir" x="-20%" y="-20%" width="140%" height="140%">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.01 0.015" numOctaves="3" result="noise1">
+                                <animate attributeName="baseFrequency" values="0.01 0.015; 0.016 0.022; 0.01 0.015" dur="35s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.4; 1" keySplines="0.42 0 0.58 1; 0.42 0 0.58 1" />
+                            </feTurbulence>
+                            <feTurbulence type="fractalNoise" baseFrequency="0.02 0.01" numOctaves="3" result="noise2">
+                                <animate attributeName="baseFrequency" values="0.02 0.01; 0.012 0.018; 0.02 0.01" dur="23s" repeatCount="indefinite" calcMode="spline" keyTimes="0; 0.65; 1" keySplines="0.33 0 0.67 1; 0.33 0 0.67 1" />
+                            </feTurbulence>
+                            <feComposite in="noise1" in2="noise2" operator="arithmetic" k1="0.5" k2="0.5" k3="0" k4="0" result="mixedNoise" />
+                            <feSpecularLighting in="mixedNoise" specularExponent="35" lighting-color="#e0f7fa" result="light">
+                                <feDistantLight azimuth="225" elevation="60" />
+                            </feSpecularLighting>
+                            <feDisplacementMap in="SourceGraphic" in2="mixedNoise" scale="45" xChannelSelector="R" yChannelSelector="G" result="distorted" />
+                            <feComposite in="light" in2="distorted" operator="arithmetic" k1="0.6" k2="1" k3="0.1" k4="0" />
+                        </filter>
+                        <rect width="100%" height="100%" fill="#001233" filter="url(#seamless-stir)" />
+                    </svg>
+                </div>
+            </div>
         </div>
 
-        <!-- <div class="col-12 col-md-8"> -->
-        <div class="relative pt-4 w-full "><span>
-            <h3 class="justify-start text-4xl">Jonglerar du <strong>säker drift</strong> med krav på <strong>högre avkastning</strong>?</h3>
-            <h4 class="text-2xl font-light">Det behöver inte vara så svårt. Med Zizzla får du ett optimalt körschema för varje situation och marknad.</h4>
-        </span></div>
-        <!-- </div> -->
-    </div>
+        <div class="relative z-20 flex-grow flex items-center justify-center text-center px-6 pb-20">
+            <div class="max-w-5xl mx-auto">
+                <h1 class="text-5xl md:text-6xl font-black leading-[1.1] tracking-normal text-white mb-10">
+                    Jonglerar du <span class="text-white">säker drift</span> <br>
+                    med krav på <span class="text-white">högre avkastning</span>?
+                </h1>
+                <div class="space-y-6 mb-12">
+                    <p class="text-2xl md:text-3xl font-bold tracking-wide text-white">Det behöver inte vara så svårt.</p>
+                    <p class="text-lg md:text-xl font-light tracking-wide text-white/80 max-w-2xl mx-auto">Med <span class="text-spring">Zizzla</span> får du ett optimalt körschema för varje situation och marknad.</p>
+                </div>
+                <!-- <a href="#nyfiken" class="inline-block px-12 py-5 bg-spring text-navy font-black text-xl uppercase tracking-widest rounded-full hover:scale-105 transition-transform">Nyfiken?</a> -->
+            </div>
+        </div>
 
-    <div class="flex flex-row-reverse pt-20">
+        <div class="relative z-20 w-full py-12 bg-navy/0 overflow-hidden">
+            <div class="max-w-9xl mx-auto px-0">
+                <p class="text-center text-[10px] uppercase tracking-[0.4em] text-white/40 mb-10">Våra kunder och partners</p>
+                
+                <div class="relative flex overflow-hidden">
+                    <div class="animate-scroll flex items-center space-x-24 pr-24">
+                        {% assign logo_style = "h-8 w-auto opacity-60 hover:opacity-100 transition-opacity brightness-0 invert flex-shrink-0" %}
+                        
+                        <img alt="Adven" src="{{site.baseurl}}/assets/img/logo_adven.svg" class="{{ logo_style }}">
+                        <img alt="Novotek" src="{{site.baseurl}}/assets/img/logo_novotek.svg" class="{{ logo_style }}">
+                        <img alt="Nässjö energi" src="{{site.baseurl}}/assets/img/logo_nassjo.svg" class="{{ logo_style }}">
+                        <img alt="Almi" src="{{site.baseurl}}/assets/img/logo_almi.svg" class="{{ logo_style }}">
+                        <img alt="Tranås energi" src="{{site.baseurl}}/assets/img/logo_tranasenergi.png" class="{{ logo_style }}">
+                        <img alt="Energimyndigheten" src="{{site.baseurl}}/assets/img/logo_energimyndigheten.svg" class="{{ logo_style }}">
+                        <img alt="Inclusive Business Partners" src="{{site.baseurl}}/assets/img/logo_inclusive_business.png" class="{{ logo_style }}">
 
-        <!-- <div class="relative invisible md:visible w-0 md:w-96"><span></span>
-            <div class="relative pt-5 me-3"><span>
-                <img src="{{site.baseurl}}/assets/img/glada_bollar.png" class="absolute rotate-5 shadow-xl bg-white mx-auto rounded">
-            </span></div>
-        </div> -->
 
-        <!-- <div class="col-11 col-md-8">
-        <div class="relative pt-4 w-full"><span>
-            <h3 class="text-4xl">Vill du <strong>köra hållbart</strong> och samtidigt pricka <strong>alla pristoppar</strong>?</h3>
-            <h4 class="text-2xl font-light">Med ett optimalt körschema för varje situation och marknad. Med Zizzla som navigatör kan du fokusera på driften.</h4>
-        </span></div>
-        </div> -->
+                        <img alt="Adven" src="{{site.baseurl}}/assets/img/logo_adven.svg" class="{{ logo_style }}">
+                        <img alt="Novotek" src="{{site.baseurl}}/assets/img/logo_novotek.svg" class="{{ logo_style }}">
+                        <img alt="Nässjö energi" src="{{site.baseurl}}/assets/img/logo_nassjo.svg" class="{{ logo_style }}">
+                        <img alt="Almi" src="{{site.baseurl}}/assets/img/logo_almi.svg" class="{{ logo_style }}">
+                        <img alt="Tranås energi" src="{{site.baseurl}}/assets/img/logo_tranasenergi.png" class="{{ logo_style }}">
+                        <img alt="Energimyndigheten" src="{{site.baseurl}}/assets/img/logo_energimyndigheten.svg" class="{{ logo_style }}">
+                        <img alt="Inclusive Business Partners" src="{{site.baseurl}}/assets/img/logo_inclusive_business.png" class="{{ logo_style }}">
 
-    </div>
-    
-    <!-- <div class="flex flex-col relative ">     
-    </div> -->
-</div>
-
-<div class="flex flex-col mt-16 md:mt-16 text-center">
-    <p class="font-display text-base text-slate-900">Våra kunder och partners</p>
-    <ul role="list" class="px-3 mt-4 flex items-center justify-center gap-x-8 sm:flex-col sm:gap-x-0 sm:gap-y-10 xl:flex-row xl:gap-x-12 xl:gap-y-0">
-        <li>
-            <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0 px-0">
-                <li><img alt="Tranås energi" style="color:transparent" src="{{site.baseurl}}/assets/img/logo_tranasenergi.png" class="w-36"></li>
-                <li><img alt="Njudung energi" src="{{site.baseurl}}/assets/img/logo_njudung.svg" class="w-36"></li>
-                <li><img alt="Nässjö energi" src="{{site.baseurl}}/assets/img/logo_nassjo.svg" class="w-36"></li>
-            </ul>
-        </li>
-        <li>
-            <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0 px-0">
-                <li><img alt="Vimmerby energi och miljö" src="{{site.baseurl}}/assets/img/logo_vimmerby.svg" class="w-36"></li>
-                <li><img alt="Eksjö energi" src="{{site.baseurl}}/assets/img/logo_eksjo.svg" class="w-36"></li>
-            </ul>
-        </li>
-        <li>
-            <ul role="list" class="flex flex-col items-center gap-y-8 sm:flex-row sm:gap-x-12 sm:gap-y-0 px-0">
-                <li><img alt="Adven" src="{{site.baseurl}}/assets/img/logo_adven.svg" class="w-36"></li>
-                <li><img alt="Novotek" src="{{site.baseurl}}/assets/img/logo_novotek.svg" class="w-36"></li>
-                <li><img alt="Almi" src="{{site.baseurl}}/assets/img/logo_almi.svg" class="w-36"></li>
-            </ul>
-        </li>
-    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
 
 <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
