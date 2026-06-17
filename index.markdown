@@ -101,3 +101,69 @@ published: true
         <!-- </div>
     </div> -->
 </div>
+
+<section class="w-full border-t border-white/10">
+    <div class="mx-auto max-w-screen-2xl px-8 py-16">
+        <div class="grid gap-10 lg:grid-cols-2 lg:items-center">
+            <div>
+                <h2 class="text-3xl font-bold text-white">
+                    Vill du se hur Zizzla fungerar i praktiken?
+                </h2>
+                <p class="mt-4 text-sm leading-6 text-white/60">
+                    Boka en kort demo så visar vi hur ni kan gå från prognos till körplan, bud och aktivering i ett enkelt arbetsflöde.
+                </p>
+                <div class="mt-6">
+                    <a class="group inline-flex items-center gap-2 rounded-full bg-spring px-6 py-3 text-sm font-bold text-navy hover:opacity-90 transition" href="mailto:nyfiken@zizzla.com?subject=Demo%20av%20Zizzla">
+                        Boka demo
+                        <span class="transition duration-300 group-hover:translate-x-1">→</span>
+                    </a>
+                </div>
+            </div>
+
+            <div class="group rounded-lg border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-spring/50">
+                <div class="flex items-center justify-between gap-4">
+                    <div>
+                        <p class="text-sm font-bold text-white">Zizzla Planner</p>
+                        <p class="mt-1 text-sm text-white/50">Budförslag redo</p>
+                    </div>
+                    <span class="rounded-full bg-white/10 px-3 py-1 text-sm text-white/60 transition duration-300 group-hover:bg-spring group-hover:text-navy">
+                        Skickat
+                    </span>
+                </div>
+
+                <div class="mt-6 grid gap-3 text-sm">
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="rounded bg-white/10 p-3">
+                            <p class="text-white/50">Resurs</p>
+                            <p class="mt-1 font-bold text-white">Elpanna</p>
+                        </div>
+                        <div class="rounded bg-white/10 p-3">
+                            <p class="text-white/50">Marknad</p>
+                            <p class="mt-1 font-bold text-white">mFRR ned</p>
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-2 gap-3">
+                        <div class="rounded bg-white/10 p-3">
+                            <p class="text-white/50">Volym</p>
+                            <p class="mt-1 font-bold text-white">4 MW</p>
+                        </div>
+                        <div class="rounded bg-white/10 p-3">
+                            <p class="text-white/50">Pris</p>
+                            <p class="mt-1 font-bold text-white">Auto</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mt-6">
+                    <div class="h-2 rounded-full bg-white/10">
+                        <div class="h-2 w-2/3 rounded-full bg-white/40 transition-all duration-300 group-hover:w-full group-hover:bg-spring"></div>
+                    </div>
+                    <div class="mt-4 rounded bg-white/10 p-3 transition duration-300 group-hover:bg-spring/20">
+                        <p class="text-sm font-bold text-white transition duration-300 group-hover:text-spring">Bud skickat till marknad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

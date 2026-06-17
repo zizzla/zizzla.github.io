@@ -25,7 +25,7 @@
         {% endif %}
       </div>
       <div class="group relative">
-        <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ post.excerpt }}</p>
+        <p class="mt-5 line-clamp-3 text-sm/6 text-gray-600">{{ post.excerpt | strip_html | truncatewords: 24 }}</p>
       </div>
 
       <div class="relative mt-8 flex items-center gap-x-4">

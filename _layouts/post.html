@@ -21,13 +21,7 @@ layout: base
         </h1>      
         {%- endif %}
         
-        {%- if page.excerpt %}
-        <p class="lead">
-          {{ page.excerpt | strip_html }}
-        </p>
-        {%- endif %}
-
-        {{ content }}
+        {{ content | replace_first: '<p>', '<p class="lead">' }}
 
         {%- if page.author %}
         <div class="not-prose">

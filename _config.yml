@@ -20,6 +20,8 @@ author:
 #   - jekyll-autoprefixer
 
 zizzla:
+  org_number: "559472-1283"
+  linkedin_url: "https://www.linkedin.com/company/zizzla-energy/"
   nav_pages:
     - about.markdown
     - services.markdown
