@@ -120,22 +120,42 @@ published: true
                 </div>
             </div>
 
-            <div class="group rounded-lg border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-spring/50">
+            <div tabindex="0" class="group rounded-lg border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-spring/50 focus:outline-none focus:border-spring/50">
                 <div class="flex items-center justify-between gap-4">
                     <div>
                         <p class="text-sm font-bold text-white">Zizzla Planner</p>
                         <p class="mt-1 text-sm text-white/50">Budförslag redo</p>
                     </div>
-                    <span class="rounded-full bg-white/10 px-3 py-1 text-sm text-white/60 transition duration-300 group-hover:bg-spring group-hover:text-navy">
-                        Skickat
+                    <span class="rounded-full bg-white/10 px-3 py-1 text-sm text-white/60 transition duration-300 group-hover:bg-spring group-hover:text-navy group-focus:bg-spring group-focus:text-navy">
+                        <span class="group-hover:hidden group-focus:hidden">Skicka</span>
+                        <span class="hidden group-hover:inline group-focus:inline">Skickat</span>
                     </span>
                 </div>
 
+                <svg class="mt-6 h-16 w-full opacity-70 transition duration-300 group-hover:opacity-100" viewBox="0 0 320 80" role="img" aria-label="Elplan, prisprognos och mFRR ned-bud">
+                    <path d="M16 48 H304" fill="none" class="stroke-spring" stroke-width="4" stroke-linecap="round" />
+                    <path d="M16 58 C64 54 96 56 128 46 S176 18 208 28 S260 50 304 42" fill="none" class="stroke-pink opacity-70 transition duration-300 group-hover:opacity-100 group-focus:opacity-100" stroke-width="3" stroke-linecap="round" />
+                    <path d="M142 48 C156 50 170 50 184 48 L184 64 C170 68 156 68 142 64 Z" class="fill-spring/10 stroke-spring/60 group-hover:hidden group-focus:hidden" stroke-width="2" stroke-dasharray="4 4" />
+                    <path d="M142 48 C156 50 170 50 184 48 L184 64 C170 68 156 68 142 64 Z" class="hidden fill-spring/30 stroke-spring group-hover:block group-focus:block" stroke-width="2" />
+                    <circle cx="164" cy="48" r="4" class="fill-spring transition duration-300 group-hover:fill-white group-focus:fill-white" />
+                </svg>
+
                 <div class="mt-6 grid gap-3 text-sm">
                     <div class="grid grid-cols-2 gap-3">
-                        <div class="rounded bg-white/10 p-3">
+                        <div class="rounded bg-spring/10 p-3">
                             <p class="text-white/50">Resurs</p>
                             <p class="mt-1 font-bold text-white">Elpanna</p>
+                            <div class="mt-2 flex items-center gap-2 text-xs text-white/60">
+                                <span class="h-2 w-2 rounded-full bg-spring"></span>
+                                <span>I drift</span>
+                            </div>
+                            <div class="mt-2 h-2 rounded-full bg-white/10">
+                                <div class="h-2 w-1/4 rounded-full bg-spring"></div>
+                            </div>
+                            <div class="mt-1 flex justify-between gap-2 text-xs text-white/50">
+                                <span>1 MW nu</span>
+                                <span>+10 MW tillgängligt</span>
+                            </div>
                         </div>
                         <div class="rounded bg-white/10 p-3">
                             <p class="text-white/50">Marknad</p>
@@ -145,7 +165,7 @@ published: true
 
                     <div class="grid grid-cols-2 gap-3">
                         <div class="rounded bg-white/10 p-3">
-                            <p class="text-white/50">Volym</p>
+                            <p class="text-white/50">Budvolym</p>
                             <p class="mt-1 font-bold text-white">4 MW</p>
                         </div>
                         <div class="rounded bg-white/10 p-3">
@@ -157,10 +177,13 @@ published: true
 
                 <div class="mt-6">
                     <div class="h-2 rounded-full bg-white/10">
-                        <div class="h-2 w-2/3 rounded-full bg-white/40 transition-all duration-300 group-hover:w-full group-hover:bg-spring"></div>
+                        <div class="h-2 w-2/3 rounded-full bg-white/40 transition-all duration-300 group-hover:w-full group-hover:bg-spring group-focus:w-full group-focus:bg-spring"></div>
                     </div>
-                    <div class="mt-4 rounded bg-white/10 p-3 transition duration-300 group-hover:bg-spring/20">
-                        <p class="text-sm font-bold text-white transition duration-300 group-hover:text-spring">Bud skickat till marknad</p>
+                    <div class="mt-4 rounded bg-white/10 p-3 transition duration-300 group-hover:bg-spring/20 group-focus:bg-spring/20">
+                        <p class="text-sm font-bold text-white transition duration-300 group-hover:text-spring group-focus:text-spring">
+                            <span class="group-hover:hidden group-focus:hidden">Bud redo att skickas</span>
+                            <span class="hidden group-hover:inline group-focus:inline">Bud skickat till marknad</span>
+                        </p>
                     </div>
                 </div>
             </div>
