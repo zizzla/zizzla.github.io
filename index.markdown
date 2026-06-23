@@ -113,7 +113,11 @@ published: true
                     Boka en kort demo så visar vi hur ni kan gå från prognos till körplan, bud och aktivering i ett enkelt arbetsflöde.
                 </p>
                 <div class="mt-6">
+                    {% if site.zizzla.demo_form_url and site.zizzla.demo_form_url != "" %}
+                    <a class="group inline-flex items-center gap-2 rounded-full bg-spring px-6 py-3 text-sm font-bold text-navy hover:opacity-90 transition" href="{{ site.zizzla.demo_form_url }}" target="_blank" rel="noopener">
+                    {% else %}
                     <a class="group inline-flex items-center gap-2 rounded-full bg-spring px-6 py-3 text-sm font-bold text-navy hover:opacity-90 transition" href="mailto:nyfiken@zizzla.com?subject=Demo%20av%20Zizzla">
+                    {% endif %}
                         Boka demo
                         <span class="transition duration-300 group-hover:translate-x-1">→</span>
                     </a>
