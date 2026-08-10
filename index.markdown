@@ -84,6 +84,177 @@ published: true
     </section>
 </div>
 
+<section class="w-full bg-navy py-16 sm:py-20" aria-labelledby="services-workflow-heading" data-services-workflow>
+    <div class="mx-auto max-w-9xl px-6">
+        <div class="max-w-2xl">
+            <h2 id="services-workflow-heading" class="text-3xl font-bold text-white sm:text-4xl">Så fungerar Zizzla</h2>
+            <p class="mt-4 text-base leading-7 text-white/60">Från prognos till fysisk aktivering – i ett sammanhängande arbetsflöde.</p>
+        </div>
+
+        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="tablist" aria-label="Zizzlas arbetsflöde">
+            <button type="button" id="services-tab-planera" role="tab" aria-selected="true" aria-controls="services-panel-planera" data-services-tab="planera" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-spring bg-white/5 p-6 text-left transition duration-300 aria-selected:border-spring aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-spring lg:hover:-translate-y-1 lg:hover:border-spring/50">
+                <img src="{{ site.baseurl }}/assets/img/services/PLANERA.svg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-30 transition duration-300 group-aria-selected:opacity-60 lg:group-hover:opacity-60">
+                <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"></div>
+                <div class="relative z-10">
+                    <p class="text-xs font-bold uppercase tracking-widest text-spring">Steg 1</p>
+                    <h3 class="mt-3 text-xl font-bold text-white">Planera</h3>
+                    <p class="mt-3 text-sm leading-6 text-white/60">Prognostisera last och marknadspriser. Optimera produktionen utifrån fysisk verklighet, tillgänglighet och tillfälliga begränsningar.</p>
+                    <p class="mt-4 text-xs font-semibold text-spring opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Prognos → Begränsningar → Optimal plan</p>
+                </div>
+            </button>
+
+            <button type="button" id="services-tab-besluta" role="tab" aria-selected="false" aria-controls="services-panel-besluta" data-services-tab="besluta" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-yellow bg-white/5 p-6 text-left transition duration-300 aria-selected:border-yellow aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow lg:hover:-translate-y-1 lg:hover:border-yellow/50">
+                <img src="{{ site.baseurl }}/assets/img/services/BESLUTA.svg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-30 transition duration-300 group-aria-selected:opacity-60 lg:group-hover:opacity-60">
+                <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"></div>
+                <div class="relative z-10">
+                    <p class="text-xs font-bold uppercase tracking-widest text-yellow">Steg 2</p>
+                    <h3 class="mt-3 text-xl font-bold text-white">Besluta</h3>
+                    <p class="mt-3 text-sm leading-6 text-white/60">Välj marknad, resurs och pris – manuellt, med beslutsstöd eller helt automatiserat. Driftvillkoren följer alltid med.</p>
+                    <p class="mt-4 text-xs font-semibold text-yellow opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Manuellt → Beslutsstöd → Automatiskt</p>
+                </div>
+            </button>
+
+            <button type="button" id="services-tab-aktivera" role="tab" aria-selected="false" aria-controls="services-panel-aktivera" data-services-tab="aktivera" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-pink bg-white/5 p-6 text-left transition duration-300 aria-selected:border-pink aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink lg:hover:-translate-y-1 lg:hover:border-pink/50">
+                <img src="{{ site.baseurl }}/assets/img/services/AKTIVERA.svg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-30 transition duration-300 group-aria-selected:opacity-60 lg:group-hover:opacity-60">
+                <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"></div>
+                <div class="relative z-10">
+                    <p class="text-xs font-bold uppercase tracking-widest text-pink">Steg 3</p>
+                    <h3 class="mt-3 text-xl font-bold text-white">Aktivera</h3>
+                    <p class="mt-3 text-sm leading-6 text-white/60">Schemalägg och styr resurser, följ aktiveringar och hantera avvikelser – manuellt, halvautomatiskt eller automatiskt.</p>
+                    <p class="mt-4 text-xs font-semibold text-pink opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Schemalägg → Aktivera → Följ upp</p>
+                </div>
+            </button>
+
+            <button type="button" id="services-tab-visualisera" role="tab" aria-selected="false" aria-controls="services-panel-visualisera" data-services-tab="visualisera" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-purple bg-white/5 p-6 text-left transition duration-300 aria-selected:border-purple aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple lg:hover:-translate-y-1 lg:hover:border-purple/50">
+                <img src="{{ site.baseurl }}/assets/img/services/VISUALISERA.svg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-30 transition duration-300 group-aria-selected:opacity-60 lg:group-hover:opacity-60">
+                <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"></div>
+                <div class="relative z-10">
+                    <p class="text-xs font-bold uppercase tracking-widest text-purple">Steg 4</p>
+                    <h3 class="mt-3 text-xl font-bold text-white">Visualisera</h3>
+                    <p class="mt-3 text-sm leading-6 text-white/60">Samla prognoser, marknad, produktion och drift i en gemensam lägesbild – från plan till faktiskt utfall.</p>
+                    <p class="mt-4 text-xs font-semibold text-purple opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Plan → Drift → Utfall</p>
+                </div>
+            </button>
+        </div>
+
+        <div class="mt-6">
+            <div id="services-panel-planera" role="tabpanel" aria-labelledby="services-tab-planera" data-services-panel="planera" class="rounded-2xl border border-white/10 border-l-4 border-l-spring bg-white/5 p-6">
+                <div class="grid gap-6 md:grid-cols-2 md:gap-10">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Planera med verkligheten som begränsning</h3>
+                        <p class="mt-3 text-sm leading-6 text-white/70">Zizzla kombinerar prognoser för last, priser och andra relevanta signaler med anläggningens faktiska möjligheter. Optimeringen tar hänsyn till både permanenta och tillfälliga begränsningar.</p>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-spring">Det här händer</p>
+                        <ul class="mt-3 space-y-2 text-sm text-white/70">
+                            <li>Prognoser för last och marknad</li>
+                            <li>Fysiska och tillfälliga begränsningar</li>
+                            <li>Optimal körplan över flera marknader</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services-panel-besluta" role="tabpanel" aria-labelledby="services-tab-besluta" data-services-panel="besluta" class="rounded-2xl border border-white/10 border-l-4 border-l-yellow bg-white/5 p-6" hidden>
+                <div class="grid gap-6 md:grid-cols-2 md:gap-10">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Välj hur mycket ni vill automatisera</h3>
+                        <p class="mt-3 text-sm leading-6 text-white/70">Marknads- och driftbeslut kan tas manuellt, med beslutsstöd eller helt algoritmiskt. Ni kan börja försiktigt och automatisera mer när organisationen är redo.</p>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-yellow">Det här händer</p>
+                        <ul class="mt-3 space-y-2 text-sm text-white/70">
+                            <li>Manuell trading</li>
+                            <li>Semi-automatisk trading</li>
+                            <li>Fullt algoritmisk trading</li>
+                        </ul>
+                        <div class="mt-5">
+                            {% if site.zizzla.demo_form_url and site.zizzla.demo_form_url != "" %}
+                            <a class="inline-flex items-center rounded-full border border-yellow/60 px-5 py-2 text-sm font-bold text-white transition hover:border-yellow" href="{{ site.zizzla.demo_form_url }}" target="_blank" rel="noopener">
+                            {% else %}
+                            <a class="inline-flex items-center rounded-full border border-yellow/60 px-5 py-2 text-sm font-bold text-white transition hover:border-yellow" href="mailto:nyfiken@zizzla.com?subject=Demo%20av%20Zizzla">
+                            {% endif %}
+                                Boka demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services-panel-aktivera" role="tabpanel" aria-labelledby="services-tab-aktivera" data-services-panel="aktivera" class="rounded-2xl border border-white/10 border-l-4 border-l-pink bg-white/5 p-6" hidden>
+                <div class="grid gap-6 md:grid-cols-2 md:gap-10">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Från beslut till fysisk drift</h3>
+                        <p class="mt-3 text-sm leading-6 text-white/70">Zizzla kan schemalägga och styra resurser när marknadsbeslut ska omsättas i faktisk drift. Aktivering kan ske manuellt, halvautomatiskt eller automatiskt.</p>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-pink">Det här händer</p>
+                        <ul class="mt-3 space-y-2 text-sm text-white/70">
+                            <li>Schemalägg resurser</li>
+                            <li>Följ aktiveringar och avvikelser</li>
+                            <li>Manuell, halvautomatisk eller automatisk aktivering</li>
+                        </ul>
+                        <div class="mt-5">
+                            {% if site.zizzla.demo_form_url and site.zizzla.demo_form_url != "" %}
+                            <a class="inline-flex items-center rounded-full border border-pink/60 px-5 py-2 text-sm font-bold text-white transition hover:border-pink" href="{{ site.zizzla.demo_form_url }}" target="_blank" rel="noopener">
+                            {% else %}
+                            <a class="inline-flex items-center rounded-full border border-pink/60 px-5 py-2 text-sm font-bold text-white transition hover:border-pink" href="mailto:nyfiken@zizzla.com?subject=Demo%20av%20Zizzla">
+                            {% endif %}
+                                Boka demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="services-panel-visualisera" role="tabpanel" aria-labelledby="services-tab-visualisera" data-services-panel="visualisera" class="rounded-2xl border border-white/10 border-l-4 border-l-purple bg-white/5 p-6" hidden>
+                <div class="grid gap-6 md:grid-cols-2 md:gap-10">
+                    <div>
+                        <h3 class="text-xl font-bold text-white">Se hela kedjan i samma lägesbild</h3>
+                        <p class="mt-3 text-sm leading-6 text-white/70">Prognoser, marknad, körplan, bud, aktivering och faktiskt utfall kan följas i samma sammanhang. Det ger både operativ överblick och bättre återkoppling över tid.</p>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-purple">Det här händer</p>
+                        <ul class="mt-3 space-y-2 text-sm text-white/70">
+                            <li>Plan och bud</li>
+                            <li>Drift och aktivering</li>
+                            <li>Utfall och uppföljning</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-8">
+            <a href="{{ site.baseurl }}/services/" class="inline-flex items-center rounded-full border border-white/30 px-6 py-3 text-sm font-bold text-white">Utforska tjänster</a>
+        </div>
+    </div>
+</section>
+
+<script>
+    (() => {
+        const workflow = document.querySelector("[data-services-workflow]");
+        if (!workflow) return;
+
+        const tabs = workflow.querySelectorAll("[data-services-tab]");
+        const panels = workflow.querySelectorAll("[data-services-panel]");
+
+        tabs.forEach((tab) => {
+            tab.addEventListener("click", () => {
+                const selectedStep = tab.dataset.servicesTab;
+
+                tabs.forEach((item) => {
+                    item.setAttribute("aria-selected", String(item === tab));
+                });
+
+                panels.forEach((panel) => {
+                    panel.hidden = panel.dataset.servicesPanel !== selectedStep;
+                });
+            });
+        });
+    })();
+</script>
+
 <div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
 
 <!-- <div class="flex flex-row">
