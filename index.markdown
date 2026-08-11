@@ -322,16 +322,18 @@ published: true
     <div class="mx-auto max-w-7xl lg:px-2">
         <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"> -->
         
-            {% if site.paginate %}
-                {% assign posts = paginator.posts %}
-            {% else %}
-                {% assign posts = site.posts %}
-            {% endif %}
+            {% assign posts = site.posts | slice: 0, 3 %}
 
             {%- include post-items.html posts = posts %}
             
         <!-- </div>
     </div> -->
+</div>
+
+<div class="mx-auto mt-8 flex max-w-9xl justify-end px-6">
+    <a href="{{ '/blogg/' | relative_url }}" class="text-sm font-bold text-spring transition hover:text-white">
+        Fler artiklar →
+    </a>
 </div>
 
 <section class="w-full border-t border-white/10">

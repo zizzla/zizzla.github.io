@@ -1,54 +1,25 @@
 ---
-layout: default
+layout: base
 ---
 
-<div>
+<section class="min-h-screen bg-navy py-16 sm:py-20">
+  <div class="mx-auto max-w-9xl px-6">
+    <header class="max-w-2xl">
+      <h1 class="text-4xl font-bold text-white sm:text-5xl">{{ page.title }}</h1>
+      {%- if page.description %}
+      <p class="mt-4 text-base leading-7 text-white/60">{{ page.description }}</p>
+      {%- endif %}
+    </header>
 
-  {%- if page.title -%}
-  <header>
-    <h1>{{ page.title }}</h1>
-  </header>
-  {%- endif -%}
+    {%- if content != "" %}
+    <div class="mt-6 max-w-2xl text-white/70">{{ content }}</div>
+    {%- endif %}
 
-  <section>
-    {{ content }}
-  </section>
-
-  {%- if site.posts.size > 0 -%}
-  <div class="article mb-4">
-    <p class="h4 mb-3">{{ page.list_title | default: "Posts" }}</p>
+    {%- if site.posts.size > 0 -%}
+    <div class="mt-10 grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+      {%- assign posts = site.posts -%}
+      {%- include post-items.html posts = posts -%}
+    </div>
+    {%- endif -%}
   </div>
-  <ul class="list-unstyled">
-    {%- for post in site.posts -%}
-    <li class="article mb-4">
-      <p class="h5 mb-2">
-        <a href="{{ post.url | relative_url }}">
-          {{ post.title | escape }}
-        </a>
-      </p>
-      {% if post.image %}
-      <div class="post-image mb-2 mt-3">
-        <a href="{{ post.url | relative_url }}">
-          <img src="{{ post.image | relative_url }}">
-        </a>
-      </div>
-      {% endif %}
-      <p class="text-muted">
-        {%- assign date_format = "%b %-d, %Y" -%}
-        {{ post.date | date: date_format }}
-      </p>
-      {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
-      {%- endif -%}
-    </li>
-    {%- endfor -%}
-  </ul>
-
-  <div class="article">
-    <p>
-      <a href="{{ "/feed.xml" | relative_url }}">Subscribe via RSS</a>
-    </p>
-  </div>
-  {%- endif -%}
-
-</div>
+</section>
