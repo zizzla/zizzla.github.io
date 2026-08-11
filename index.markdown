@@ -223,6 +223,19 @@ published: true
                     </div>
                 </div>
             </div>
+
+            <div data-services-hover-preview="besluta" class="rounded-2xl border border-white/10 border-l-4 border-l-yellow bg-white/5 p-6" hidden>
+                <div class="grid gap-6 lg:grid-cols-3 lg:items-center lg:gap-10">
+                    <div class="overflow-hidden rounded-xl border border-white/10 bg-navy p-2 lg:col-span-2">
+                        <img src="{{ site.baseurl }}/assets/video/besluta-da.gif" alt="Budläggning i Zizzla Planner" class="max-h-72 w-full object-contain" data-services-preview-image>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-yellow">Day-ahead / marknadsbud</p>
+                        <h3 class="mt-3 text-xl font-bold text-white">Budläggning i Zizzla Planner</h3>
+                        <p class="mt-3 text-sm leading-6 text-white/70">Från körplan till marknadsbud i samma arbetsflöde.</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
         <div class="mt-8">
@@ -238,25 +251,73 @@ published: true
 
         const tabs = workflow.querySelectorAll("[data-services-tab]");
         const panels = workflow.querySelectorAll("[data-services-panel]");
+        const decideTab = workflow.querySelector('[data-services-tab="besluta"]');
+        const hoverPreview = workflow.querySelector('[data-services-hover-preview="besluta"]');
+        const previewImage = workflow.querySelector("[data-services-preview-image]");
+        const desktop = window.matchMedia("(min-width: 1024px)");
+        let previewAvailable = previewImage.complete && previewImage.naturalWidth > 0;
+        let previewActive = false;
+
+        const selectedStep = () =>
+            workflow.querySelector('[data-services-tab][aria-selected="true"]')?.dataset.servicesTab;
+
+        const showSelectedPanel = () => {
+            previewActive = false;
+            hoverPreview.hidden = true;
+
+            panels.forEach((panel) => {
+                panel.hidden = panel.dataset.servicesPanel !== selectedStep();
+            });
+        };
+
+        const showHoverPreview = () => {
+            if (!desktop.matches || !previewAvailable) return;
+
+            previewActive = true;
+            panels.forEach((panel) => {
+                panel.hidden = true;
+            });
+            hoverPreview.hidden = false;
+        };
+
+        previewImage.addEventListener("load", () => {
+            previewAvailable = true;
+        });
+
+        previewImage.addEventListener("error", () => {
+            previewAvailable = false;
+            if (previewActive) showSelectedPanel();
+        });
+
+        decideTab.addEventListener("mouseenter", showHoverPreview);
+        decideTab.addEventListener("mouseleave", () => {
+            if (previewActive) showSelectedPanel();
+        });
+
+        desktop.addEventListener("change", () => {
+            if (!desktop.matches && previewActive) showSelectedPanel();
+        });
 
         tabs.forEach((tab) => {
             tab.addEventListener("click", () => {
-                const selectedStep = tab.dataset.servicesTab;
-
                 tabs.forEach((item) => {
                     item.setAttribute("aria-selected", String(item === tab));
                 });
 
-                panels.forEach((panel) => {
-                    panel.hidden = panel.dataset.servicesPanel !== selectedStep;
-                });
+                if (!previewActive) showSelectedPanel();
             });
         });
     })();
 </script>
 
-<div class="mt-10 grid gap-4 sm:mt-16 lg:grid-cols-3 lg:grid-rows-2">
+<div class="mx-auto mt-10 max-w-9xl px-6 sm:mt-16">
+    <div class="max-w-2xl">
+        <h2 class="text-3xl font-bold text-white sm:text-4xl">Insikter</h2>
+        <p class="mt-4 text-base leading-7 text-white/60">Analyser och perspektiv på energimarknaden, flexibilitet och framtidens drift.</p>
+    </div>
+</div>
 
+<div class="mx-auto mt-8 grid max-w-9xl gap-4 px-6 lg:grid-cols-3 lg:grid-rows-2">
 <!-- <div class="flex flex-row">
     <div class="mx-auto max-w-7xl lg:px-2">
         <div class="mx-auto mt-10 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-16 border-t border-gray-200 pt-10 sm:mt-16 sm:pt-16 lg:mx-0 lg:max-w-none lg:grid-cols-3"> -->
