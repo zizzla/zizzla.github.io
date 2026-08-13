@@ -39,7 +39,7 @@ I det här fallet ser energikedjan förenklat ut så här:
 
 Det skiljer sig därmed från ett traditionellt elektriskt batteri. Energin lagras inte som elektrokemisk energi för att senare omvandlas tillbaka till elektricitet, utan som **värme för senare användning i en värme- eller industriprocess**.
 
-Sandbatteriet är närmare bestämt ett **högtemperaturlager**. Den höga lagringstemperaturen gör det möjligt att använda den lagrade energin för exempelvis ångproduktion, vilket öppnar användningsområden som ligger utanför traditionell lågtempererad värmelagring.
+Sandbatteriet är närmare bestämt ett **högtemperaturlager**, där temperaturen kan nå omkring 600 °C. Den höga lagringstemperaturen gör det möjligt att använda den lagrade energin för exempelvis ångproduktion, vilket öppnar användningsområden som ligger utanför traditionell lågtempererad värmelagring.
 
 I det analyserade fallet har anläggningen:
 
@@ -47,7 +47,7 @@ I det analyserade fallet har anläggningen:
 **239 MWh lagringskapacitet**  
 **cirka 48 timmars energileverans**
 
-Kombinationen av stor energikapacitet och styrbar elektrisk laddning gör tekniken intressant inte bara för energioptimering utan också för elsystemets balansmarknader.
+Kombinationen av stor energilagringskapacitet och styrbar elektrisk laddning gör tekniken intressant inte bara för energioptimering utan också för elsystemets balansmarknader.
 
 <figure class="not-prose my-10 md:-mx-8 lg:-mx-16">
   <img src="{{ '/assets/img/blog/sandbatterier/sandbatteri-hero.png' | relative_url }}" alt="Sandbatteri med 5 MW ångleverans, 239 MWh lagringskapacitet och cirka 48 timmars energileverans i flödet el till sandbatteri till ånga." class="h-auto w-full rounded-xl border border-gray-200 bg-white" width="1536" height="1024">
@@ -139,7 +139,7 @@ Den maximala möjliga laddnings- och urladdningseffekten kan variera beroende p�
 
 Den andra dimensionen är hur länge regleringen kan fortsätta.
 
-Ett termiskt lager med stor energikapacitet kan ha en fördel när aktiveringar blir längre eller återkommer många gånger.
+Ett termiskt lager med stor energilagringskapacitet kan ha en fördel när aktiveringar blir längre eller återkommer många gånger.
 
 I det analyserade fallet finns **239 MWh lagrad energi**.
 
@@ -147,7 +147,7 @@ Det är mycket energi i förhållande till en ångleverans på 5 MW och innebär
 
 Det betyder inte att hela kapaciteten alltid är tillgänglig för balansmarknaden. Processens framtida energibehov måste fortfarande säkerställas.
 
-Men den stora energikapaciteten skapar en uthållighet som är viktig på marknader där regleringen inte bara handlar om några korta effektförändringar.
+Men den stora energilagringskapaciteten skapar en uthållighet som är viktig på marknader där regleringen inte bara handlar om några korta effektförändringar.
 
 ## SoC blir en central del av optimeringen
 
@@ -203,7 +203,7 @@ Optimeringen måste:
 - följa lagrets SoC,
 - ta hänsyn till SoC-beroende laddnings- och urladdningsgränser,
 - säkerställa den framtida ångleveransen,
-- och beräkna hur stor volym som faktiskt kan erbjudas upp respektive ned.
+- och beräkna hur stor volym som faktiskt kan erbjudas upp respektive ned – och till vilket pris budet bör läggas.
 
 ### 3. Aktivera
 
@@ -254,13 +254,13 @@ Den verkliga ekonomin påverkas också av:
 
 Sandbatteriet är ett tydligt exempel på varför det perspektivet behövs.
 
-Om analysen endast utgår från kostnaden för att producera ånga missas en del av värdet. Den styrbara elektriska lasten och den stora energikapaciteten kan samtidigt skapa flexibilitet för elsystemet och därmed ytterligare ekonomiska möjligheter.
+Om analysen endast utgår från kostnaden för att producera ånga missas en del av värdet. Den styrbara elektriska lasten och den stora energilagringskapaciteten kan samtidigt skapa flexibilitet för elsystemet och därmed ytterligare ekonomiska möjligheter.
 
 ## Från energilager till marknadsflexibilitet
 
 Stora högtemperaturlager kombinerar flera egenskaper som är intressanta i ett allt mer elektrifierat energisystem:
 
-**stor energikapacitet**  
+**stor energilagringskapacitet**  
 **styrbar elektrisk effekt**  
 **möjlighet till samtidig laddning och urladdning**  
 **produktion av högtempererad värme och ånga**

@@ -224,10 +224,25 @@ published: true
                 </div>
             </div>
 
+            <div data-services-hover-preview="aktivera" class="rounded-2xl border border-white/10 border-l-4 border-l-pink bg-white/5 p-6" hidden>
+                <div class="grid gap-6 lg:grid-cols-3 lg:items-center lg:gap-10">
+                    <div class="overflow-hidden rounded-xl border border-white/10 bg-navy p-2 lg:col-span-2">
+                        <video class="h-72 w-full object-contain" muted loop playsinline preload="metadata" data-services-preview-media>
+                            <source src="{{ site.baseurl }}/assets/video/services/aktivera-mfrr-eam-zizzla-v2.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold uppercase tracking-widest text-pink">mFRR EAM / aktivering</p>
+                        <h3 class="mt-3 text-xl font-bold text-white">Aktivering i verklig drift</h3>
+                        <p class="mt-3 text-sm leading-6 text-white/70">Från marknadsbeslut till schemaläggning och fysisk aktivering av resursen.</p>
+                    </div>
+                </div>
+            </div>
+
             <div data-services-hover-preview="besluta" class="rounded-2xl border border-white/10 border-l-4 border-l-yellow bg-white/5 p-6" hidden>
                 <div class="grid gap-6 lg:grid-cols-3 lg:items-center lg:gap-10">
                     <div class="overflow-hidden rounded-xl border border-white/10 bg-navy p-2 lg:col-span-2">
-                        <img src="{{ site.baseurl }}/assets/video/besluta-da.gif" alt="Budläggning i Zizzla Planner" class="max-h-72 w-full object-contain" data-services-preview-image>
+                        <img src="{{ site.baseurl }}/assets/video/besluta-da.gif" alt="Budläggning i Zizzla Planner" class="h-72 w-full object-contain" data-services-preview-media>
                     </div>
                     <div>
                         <p class="text-xs font-bold uppercase tracking-widest text-yellow">Day-ahead / marknadsbud</p>
@@ -251,51 +266,70 @@ published: true
 
         const tabs = workflow.querySelectorAll("[data-services-tab]");
         const panels = workflow.querySelectorAll("[data-services-panel]");
-        const decideTab = workflow.querySelector('[data-services-tab="besluta"]');
-        const hoverPreview = workflow.querySelector('[data-services-hover-preview="besluta"]');
-        const previewImage = workflow.querySelector("[data-services-preview-image]");
+        const previews = workflow.querySelectorAll("[data-services-hover-preview]");
         const desktop = window.matchMedia("(min-width: 1024px)");
-        let previewAvailable = previewImage.complete && previewImage.naturalWidth > 0;
-        let previewActive = false;
+        let activePreview = null;
 
         const selectedStep = () =>
             workflow.querySelector('[data-services-tab][aria-selected="true"]')?.dataset.servicesTab;
 
+        const stopPreviewMedia = (preview) => {
+            const video = preview?.querySelector("video[data-services-preview-media]");
+            if (video) video.pause();
+        };
+
         const showSelectedPanel = () => {
-            previewActive = false;
-            hoverPreview.hidden = true;
+            stopPreviewMedia(activePreview);
+            activePreview = null;
+            previews.forEach((preview) => {
+                preview.hidden = true;
+            });
 
             panels.forEach((panel) => {
                 panel.hidden = panel.dataset.servicesPanel !== selectedStep();
             });
         };
 
-        const showHoverPreview = () => {
-            if (!desktop.matches || !previewAvailable) return;
+        const showHoverPreview = (preview) => {
+            if (!desktop.matches || preview.dataset.previewUnavailable === "true") return;
 
-            previewActive = true;
+            activePreview = preview;
             panels.forEach((panel) => {
                 panel.hidden = true;
             });
-            hoverPreview.hidden = false;
+            previews.forEach((item) => {
+                item.hidden = item !== preview;
+                if (item !== preview) stopPreviewMedia(item);
+            });
+
+            const video = preview.querySelector("video[data-services-preview-media]");
+            if (video) {
+                video.play().catch(() => {
+                    preview.dataset.previewUnavailable = "true";
+                    if (activePreview === preview) showSelectedPanel();
+                });
+            }
         };
 
-        previewImage.addEventListener("load", () => {
-            previewAvailable = true;
-        });
+        previews.forEach((preview) => {
+            const step = preview.dataset.servicesHoverPreview;
+            const tab = workflow.querySelector(`[data-services-tab="${step}"]`);
+            const media = preview.querySelector("[data-services-preview-media]");
+            if (!tab || !media) return;
 
-        previewImage.addEventListener("error", () => {
-            previewAvailable = false;
-            if (previewActive) showSelectedPanel();
-        });
+            media.addEventListener("error", () => {
+                preview.dataset.previewUnavailable = "true";
+                if (activePreview === preview) showSelectedPanel();
+            }, true);
 
-        decideTab.addEventListener("mouseenter", showHoverPreview);
-        decideTab.addEventListener("mouseleave", () => {
-            if (previewActive) showSelectedPanel();
+            tab.addEventListener("mouseenter", () => showHoverPreview(preview));
+            tab.addEventListener("mouseleave", () => {
+                if (activePreview === preview) showSelectedPanel();
+            });
         });
 
         desktop.addEventListener("change", () => {
-            if (!desktop.matches && previewActive) showSelectedPanel();
+            if (!desktop.matches && activePreview) showSelectedPanel();
         });
 
         tabs.forEach((tab) => {
@@ -304,7 +338,7 @@ published: true
                     item.setAttribute("aria-selected", String(item === tab));
                 });
 
-                if (!previewActive) showSelectedPanel();
+                if (!activePreview) showSelectedPanel();
             });
         });
     })();
