@@ -1,3 +1,15 @@
+- id: prognos
+  title: Prognosmotor
+  short_title: Prognoser
+  icon: PLANERA.svg
+  value: Förstå morgondagen innan ni planerar den.
+  text: Skräddarsydda spotprisprognoser och lastprognoser anpassade efter ditt bolags unika behov. Ett gemensamt underlag gör det enklare att gå från förväntad efterfrågan och marknadspris till nästa beslut.
+  benefits:
+    - Lastprognoser för er verksamhet
+    - Spotprisprognoser som planeringsunderlag
+    - Samma underlag för optimering och beslut
+  visual: forecast
+  caption: Prognosmotor · Exempel från Zizzla
 - id: optimering
   title: Produktionsoptimering
   short_title: Optimering
@@ -12,28 +24,16 @@
   crop: optimering
   caption: Illustrativ produktvy · Optimering och aktuell plan
   alt: Utsnitt ur Zizzla Planner med Optimizer, Current plan och Difference samt portföljens körplan.
-- id: prognos
-  title: Prognosmotor
-  short_title: Prognoser
-  icon: PLANERA.svg
-  value: Förstå morgondagen innan ni planerar den.
-  text: Skräddarsydda spotprisprognoser och lastprognoser anpassade efter ditt bolags unika behov. Ett gemensamt underlag gör det enklare att gå från förväntad efterfrågan och marknadspris till nästa beslut.
-  benefits:
-    - Lastprognoser för er verksamhet
-    - Spotprisprognoser som planeringsunderlag
-    - Samma underlag för optimering och beslut
-  visual: forecast
-  caption: Prognosmotor · Exempel från Zizzla
 - id: budgivning
   title: Budgivningsplattform
   short_title: Budgivning
   icon: BESLUTA.svg
   value: Från optimal plan till marknaden – med färre manuella steg.
-  text: Skapa realistiska bud till el- och balansmarknaden med ett enkelt knapptryck. Rätt tid, rätt storlek och rätt pris står i centrum. Granska förslagen innan de skickas och välj hur mycket ni vill automatisera.
+  text: Skapa realistiska bud till el- och balansmarknaden med ett enkelt knapptryck. Rätt tid, rätt storlek och rätt pris står i centrum. Granska förslagen innan de skickas och välj hur mycket ni vill automatisera. Pricka rätt med budstrategier som tar hänsyn till driften. Vi utökar löpande utbudet av budtyper – valet behöver matcha resursens förmåga. En snabb elpanna och ett kraftvärmeverk har olika förutsättningar för prisberoende bud.
   benefits:
     - Budförslag som följer körplanen
     - Samlad granskning före skickning
-    - Stöd för el- och balansmarknader
+    - Budstrategier utifrån resursens förmåga
   visual: planner
   crop: budgivning
   caption: Illustrativ produktvy · Öppna bud och granskning
