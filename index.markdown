@@ -56,11 +56,11 @@ published: true
             <div class="max-w-9xl mx-auto px-0">
                 <p class="text-center text-[10px] uppercase tracking-[0.4em] text-white/40 mb-10">Våra kunder och partners</p>
                 
-                <div class="relative flex overflow-hidden">
-                    <div class="animate-scroll">
+                <div class="logo-marquee relative flex overflow-hidden">
+                    <div class="logo-track">
                         {% assign logo_style = "h-8 w-auto opacity-60 hover:opacity-100 transition-opacity brightness-0 invert shrink-0" %}
                         {% for copy in (1..2) %}
-                        <div class="logo-set"{% if copy == 2 %} aria-hidden="true"{% endif %}>
+                        <div class="logo-group"{% if copy == 2 %} aria-hidden="true"{% endif %}>
                             <img alt="{% if copy == 1 %}Adven{% endif %}" src="{{site.baseurl}}/assets/img/logo_adven.svg" width="850" height="200" class="{{ logo_style }}">
                             <img alt="{% if copy == 1 %}Novotek{% endif %}" src="{{site.baseurl}}/assets/img/logo_novotek.svg" width="120" height="32" class="{{ logo_style }}">
                             <img alt="{% if copy == 1 %}Nässjö energi{% endif %}" src="{{site.baseurl}}/assets/img/logo_nassjo.svg" width="522" height="95" class="{{ logo_style }}">
