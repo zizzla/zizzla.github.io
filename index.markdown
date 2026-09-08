@@ -169,12 +169,8 @@ published: true
                             <li>Fullt algoritmisk trading</li>
                         </ul>
                         <div class="mt-5">
-                            {% if site.zizzla.demo_form_url and site.zizzla.demo_form_url != "" %}
-                            <a class="inline-flex items-center rounded-full border border-yellow/60 px-5 py-2 text-sm font-bold text-white transition hover:border-yellow" href="{{ site.zizzla.demo_form_url }}" target="_blank" rel="noopener">
-                            {% else %}
-                            <a class="inline-flex items-center rounded-full border border-yellow/60 px-5 py-2 text-sm font-bold text-white transition hover:border-yellow" href="mailto:nyfiken@zizzla.com?subject=Demo%20av%20Zizzla">
-                            {% endif %}
-                                Boka demo
+                            <a class="inline-flex items-center rounded-full border border-yellow/60 px-5 py-2 text-sm font-bold text-white transition hover:border-yellow" href="mailto:{{ site.email }}" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog">
+                                Nyfiken? Hör av dig.
                             </a>
                         </div>
                     </div>
@@ -195,12 +191,8 @@ published: true
                             <li>Manuell, halvautomatisk eller automatisk aktivering</li>
                         </ul>
                         <div class="mt-5">
-                            {% if site.zizzla.demo_form_url and site.zizzla.demo_form_url != "" %}
-                            <a class="inline-flex items-center rounded-full border border-pink/60 px-5 py-2 text-sm font-bold text-white transition hover:border-pink" href="{{ site.zizzla.demo_form_url }}" target="_blank" rel="noopener">
-                            {% else %}
-                            <a class="inline-flex items-center rounded-full border border-pink/60 px-5 py-2 text-sm font-bold text-white transition hover:border-pink" href="mailto:nyfiken@zizzla.com?subject=Demo%20av%20Zizzla">
-                            {% endif %}
-                                Boka demo
+                            <a class="inline-flex items-center rounded-full border border-pink/60 px-5 py-2 text-sm font-bold text-white transition hover:border-pink" href="mailto:{{ site.email }}" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog">
+                                Nyfiken? Hör av dig.
                             </a>
                         </div>
                     </div>
@@ -378,15 +370,11 @@ published: true
                     Vill du se hur Zizzla fungerar i praktiken?
                 </h2>
                 <p class="mt-4 text-sm leading-6 text-white/60">
-                    Boka en kort demo så visar vi hur ni kan gå från prognos till körplan, bud och aktivering i ett enkelt arbetsflöde.
+                    Berätta vad ni vill åstadkomma så tar vi det därifrån.
                 </p>
                 <div class="mt-6">
-                    {% if site.zizzla.demo_form_url and site.zizzla.demo_form_url != "" %}
-                    <a class="group inline-flex items-center gap-2 rounded-full bg-spring px-6 py-3 text-sm font-bold text-navy hover:opacity-90 transition" href="{{ site.zizzla.demo_form_url }}" target="_blank" rel="noopener">
-                    {% else %}
-                    <a class="group inline-flex items-center gap-2 rounded-full bg-spring px-6 py-3 text-sm font-bold text-navy hover:opacity-90 transition" href="mailto:nyfiken@zizzla.com?subject=Demo%20av%20Zizzla">
-                    {% endif %}
-                        Boka demo
+                    <a class="group inline-flex items-center gap-2 rounded-full bg-spring px-6 py-3 text-sm font-bold text-navy hover:opacity-90 transition" href="mailto:{{ site.email }}" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog">
+                        Nyfiken? Hör av dig.
                         <span class="transition duration-300 group-hover:translate-x-1">→</span>
                     </a>
                 </div>

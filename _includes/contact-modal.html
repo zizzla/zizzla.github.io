@@ -1,0 +1,60 @@
+<dialog id="contact-dialog" aria-labelledby="contact-title" aria-describedby="contact-intro" class="m-auto max-h-[calc(100dvh-2rem)] w-[calc(100%-2rem)] max-w-xl overflow-y-auto rounded-3xl bg-white p-0 text-navy shadow-2xl backdrop:bg-navy/80">
+  <div class="relative p-6 sm:p-10">
+    <button type="button" data-contact-close aria-label="Stäng kontaktformuläret" class="absolute right-3 top-3 flex size-11 items-center justify-center rounded-full text-2xl hover:bg-navy/5 focus-visible:outline-2 focus-visible:outline-navy">×</button>
+    <h2 id="contact-title" class="pr-8 text-3xl font-black tracking-tight sm:text-4xl">Nyfiken? Hör av dig.</h2>
+    <p id="contact-intro" class="mt-4 leading-relaxed">Vi är nyfikna på vad ni vill åstadkomma.<br>Berätta kort så hör vi av oss.</p>
+    <!-- Activate once: submit from the published site and confirm the email sent to site.email. -->
+    <form action="https://formsubmit.co/{{ site.email | escape }}" method="POST" class="mt-6 space-y-4">
+      <input type="hidden" name="_subject" value="Ny kontakt från Zizzlas webbplats">
+      <input type="hidden" name="_next" value="{{ '/tack/' | absolute_url }}" data-thank-you-path="{{ '/tack/' | relative_url }}">
+      <p class="text-sm text-navy/70">* Obligatoriska fält</p>
+      <div>
+        <label for="contact-name" class="mb-1 block font-bold">Namn *</label>
+        <input id="contact-name" name="name" autocomplete="name" required maxlength="150" class="w-full rounded-xl border border-navy/25 px-4 py-3 text-base focus:outline-2 focus:outline-navy user-invalid:border-pink">
+      </div>
+      <div>
+        <label for="contact-company" class="mb-1 block font-bold">Företag</label>
+        <input id="contact-company" name="company" autocomplete="organization" maxlength="200" class="w-full rounded-xl border border-navy/25 px-4 py-3 text-base focus:outline-2 focus:outline-navy">
+      </div>
+      <div>
+        <label for="contact-email" class="mb-1 block font-bold">E-post *</label>
+        <input id="contact-email" name="email" type="email" autocomplete="email" required maxlength="254" class="w-full rounded-xl border border-navy/25 px-4 py-3 text-base focus:outline-2 focus:outline-navy user-invalid:border-pink">
+      </div>
+      <div>
+        <label for="contact-message" class="mb-1 block font-bold">Meddelande *</label>
+        <textarea id="contact-message" name="message" required rows="3" maxlength="10000" class="w-full resize-y rounded-xl border border-navy/25 px-4 py-3 text-base focus:outline-2 focus:outline-navy user-invalid:border-pink"></textarea>
+      </div>
+      <button type="submit" class="w-full rounded-full bg-spring px-8 py-3 text-lg font-bold text-navy hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-navy">Skicka</button>
+      <p class="text-sm text-navy/70">Du kan också mejla <a class="underline" href="mailto:{{ site.email }}">{{ site.email }}</a>.</p>
+    </form>
+  </div>
+</dialog>
+<script>
+  (() => {
+    const dialog = document.getElementById('contact-dialog');
+    // Use the visitor's address, not Jekyll's development bind address (0.0.0.0).
+    const next = dialog.querySelector('[name="_next"]');
+    next.value = new URL(next.dataset.thankYouPath, window.location.origin).href;
+    let previousOverflow;
+    document.querySelectorAll('[data-contact-open]').forEach(link => {
+      link.addEventListener('click', event => {
+        event.preventDefault();
+        previousOverflow = document.documentElement.style.overflow;
+        dialog.showModal();
+        document.documentElement.style.overflow = 'hidden';
+      });
+    });
+    dialog.querySelector('[data-contact-close]').addEventListener('click', () => dialog.close());
+    let startedOutside = false;
+    const outside = event => {
+      const rect = dialog.getBoundingClientRect();
+      return event.clientX < rect.left || event.clientX > rect.right || event.clientY < rect.top || event.clientY > rect.bottom;
+    };
+    dialog.addEventListener('pointerdown', event => { startedOutside = outside(event); });
+    dialog.addEventListener('click', event => {
+      if (startedOutside && outside(event)) dialog.close();
+      startedOutside = false;
+    });
+    dialog.addEventListener('close', () => { document.documentElement.style.overflow = previousOverflow; });
+  })();
+</script>

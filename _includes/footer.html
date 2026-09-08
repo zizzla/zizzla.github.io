@@ -32,7 +32,7 @@
             <a class="hover:text-spring" href="{{ site.baseurl }}/services/">Tjänster</a>
           </li>
           <li>
-            <a class="hover:text-spring" href="mailto:{{ site.email }}">Kontakt</a>
+            <a class="hover:text-spring" href="mailto:{{ site.email }}" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog">Nyfiken? Hör av dig.</a>
           </li>
           <li>
             <a class="hover:text-spring" href="{{ site.zizzla.linkedin_url }}">LinkedIn</a>
@@ -48,3 +48,5 @@
     </div>
   </div>
 </footer>
+
+{% include contact-modal.html %}
