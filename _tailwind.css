@@ -41,3 +41,8 @@
 .animate-scroll:hover {
   animation-play-state: paused;
 }
+
+[x-cloak] { display: none !important; }
+@media (width < 48rem) {
+  html.mobile-menu-open { overflow: hidden; }
+}

@@ -91,54 +91,54 @@ published: true
             <p class="mt-4 text-base leading-7 text-white/60">Från prognos till fysisk aktivering – i ett sammanhängande arbetsflöde.</p>
         </div>
 
-        <div class="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4" role="tablist" aria-label="Zizzlas arbetsflöde">
-            <button type="button" id="services-tab-planera" role="tab" aria-selected="true" aria-controls="services-panel-planera" data-services-tab="planera" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-spring bg-white/5 p-6 text-left transition duration-300 aria-selected:border-spring aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-spring lg:hover:-translate-y-1 lg:hover:border-spring/50">
+        <div class="mt-10 grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4" role="tablist" aria-label="Zizzlas arbetsflöde">
+            <button type="button" id="services-tab-planera" role="tab" aria-selected="true" aria-controls="services-panel-planera" data-services-tab="planera" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-spring bg-white/5 p-3 md:p-6 text-left transition duration-300 aria-selected:border-spring aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-spring lg:hover:-translate-y-1 lg:hover:border-spring/50">
                 <img src="{{ site.baseurl }}/assets/img/services/PLANERA.svg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-30 transition duration-300 group-aria-selected:opacity-60 lg:group-hover:opacity-60">
                 <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"></div>
                 <div class="relative z-10">
                     <p class="text-xs font-bold uppercase tracking-widest text-spring">Steg 1</p>
                     <h3 class="mt-3 text-xl font-bold text-white">Planera</h3>
-                    <p class="mt-3 text-sm leading-6 text-white/60">Prognostisera last och marknadspriser. Optimera produktionen utifrån fysisk verklighet, tillgänglighet och tillfälliga begränsningar.</p>
-                    <p class="mt-4 text-xs font-semibold text-spring opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Prognos → Begränsningar → Optimal plan</p>
+                    <p class="hidden md:block mt-3 text-sm leading-6 text-white/60">Prognostisera last och marknadspriser. Optimera produktionen utifrån fysisk verklighet, tillgänglighet och tillfälliga begränsningar.</p>
+                    <p class="hidden md:block mt-4 text-xs font-semibold text-spring opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Prognos → Begränsningar → Optimal plan</p>
                 </div>
             </button>
 
-            <button type="button" id="services-tab-besluta" role="tab" aria-selected="false" aria-controls="services-panel-besluta" data-services-tab="besluta" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-yellow bg-white/5 p-6 text-left transition duration-300 aria-selected:border-yellow aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow lg:hover:-translate-y-1 lg:hover:border-yellow/50">
+            <button type="button" id="services-tab-besluta" role="tab" aria-selected="false" aria-controls="services-panel-besluta" data-services-tab="besluta" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-yellow bg-white/5 p-3 md:p-6 text-left transition duration-300 aria-selected:border-yellow aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-yellow lg:hover:-translate-y-1 lg:hover:border-yellow/50">
                 <img src="{{ site.baseurl }}/assets/img/services/BESLUTA.svg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-30 transition duration-300 group-aria-selected:opacity-60 lg:group-hover:opacity-60">
                 <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"></div>
                 <div class="relative z-10">
                     <p class="text-xs font-bold uppercase tracking-widest text-yellow">Steg 2</p>
                     <h3 class="mt-3 text-xl font-bold text-white">Besluta</h3>
-                    <p class="mt-3 text-sm leading-6 text-white/60">Välj marknad, resurs och pris – manuellt, med beslutsstöd eller helt automatiserat. Driftvillkoren följer alltid med.</p>
-                    <p class="mt-4 text-xs font-semibold text-yellow opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Manuellt → Beslutsstöd → Automatiskt</p>
+                    <p class="hidden md:block mt-3 text-sm leading-6 text-white/60">Välj marknad, resurs och pris – manuellt, med beslutsstöd eller helt automatiserat. Driftvillkoren följer alltid med.</p>
+                    <p class="hidden md:block mt-4 text-xs font-semibold text-yellow opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Manuellt → Beslutsstöd → Automatiskt</p>
                 </div>
             </button>
 
-            <button type="button" id="services-tab-aktivera" role="tab" aria-selected="false" aria-controls="services-panel-aktivera" data-services-tab="aktivera" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-pink bg-white/5 p-6 text-left transition duration-300 aria-selected:border-pink aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink lg:hover:-translate-y-1 lg:hover:border-pink/50">
+            <button type="button" id="services-tab-aktivera" role="tab" aria-selected="false" aria-controls="services-panel-aktivera" data-services-tab="aktivera" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-pink bg-white/5 p-3 md:p-6 text-left transition duration-300 aria-selected:border-pink aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-pink lg:hover:-translate-y-1 lg:hover:border-pink/50">
                 <img src="{{ site.baseurl }}/assets/img/services/AKTIVERA.svg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-30 transition duration-300 group-aria-selected:opacity-60 lg:group-hover:opacity-60">
                 <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"></div>
                 <div class="relative z-10">
                     <p class="text-xs font-bold uppercase tracking-widest text-pink">Steg 3</p>
                     <h3 class="mt-3 text-xl font-bold text-white">Aktivera</h3>
-                    <p class="mt-3 text-sm leading-6 text-white/60">Schemalägg och styr resurser, följ aktiveringar och hantera avvikelser – manuellt, halvautomatiskt eller automatiskt.</p>
-                    <p class="mt-4 text-xs font-semibold text-pink opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Schemalägg → Aktivera → Följ upp</p>
+                    <p class="hidden md:block mt-3 text-sm leading-6 text-white/60">Schemalägg och styr resurser, följ aktiveringar och hantera avvikelser – manuellt, halvautomatiskt eller automatiskt.</p>
+                    <p class="hidden md:block mt-4 text-xs font-semibold text-pink opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Schemalägg → Aktivera → Följ upp</p>
                 </div>
             </button>
 
-            <button type="button" id="services-tab-visualisera" role="tab" aria-selected="false" aria-controls="services-panel-visualisera" data-services-tab="visualisera" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-purple bg-white/5 p-6 text-left transition duration-300 aria-selected:border-purple aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple lg:hover:-translate-y-1 lg:hover:border-purple/50">
+            <button type="button" id="services-tab-visualisera" role="tab" aria-selected="false" aria-controls="services-panel-visualisera" data-services-tab="visualisera" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-purple bg-white/5 p-3 md:p-6 text-left transition duration-300 aria-selected:border-purple aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-purple lg:hover:-translate-y-1 lg:hover:border-purple/50">
                 <img src="{{ site.baseurl }}/assets/img/services/VISUALISERA.svg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-30 transition duration-300 group-aria-selected:opacity-60 lg:group-hover:opacity-60">
                 <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"></div>
                 <div class="relative z-10">
                     <p class="text-xs font-bold uppercase tracking-widest text-purple">Steg 4</p>
                     <h3 class="mt-3 text-xl font-bold text-white">Visualisera</h3>
-                    <p class="mt-3 text-sm leading-6 text-white/60">Samla prognoser, marknad, produktion och drift i en gemensam lägesbild – från plan till faktiskt utfall.</p>
-                    <p class="mt-4 text-xs font-semibold text-purple opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Plan → Drift → Utfall</p>
+                    <p class="hidden md:block mt-3 text-sm leading-6 text-white/60">Samla prognoser, marknad, produktion och drift i en gemensam lägesbild – från plan till faktiskt utfall.</p>
+                    <p class="hidden md:block mt-4 text-xs font-semibold text-purple opacity-60 transition duration-300 lg:opacity-0 lg:group-hover:opacity-100">Plan → Drift → Utfall</p>
                 </div>
             </button>
         </div>
 
         <div class="mt-6">
-            <div id="services-panel-planera" role="tabpanel" aria-labelledby="services-tab-planera" data-services-panel="planera" class="rounded-2xl border border-white/10 border-l-4 border-l-spring bg-white/5 p-6">
+            <div id="services-panel-planera" role="tabpanel" aria-labelledby="services-tab-planera" tabindex="-1" data-services-panel="planera" class="scroll-mt-24 rounded-2xl border border-white/10 border-l-4 border-l-spring bg-white/5 p-6">
                 <div class="grid gap-6 md:grid-cols-2 md:gap-10">
                     <div>
                         <h3 class="text-xl font-bold text-white">Planera med verkligheten som begränsning</h3>
@@ -155,7 +155,7 @@ published: true
                 </div>
             </div>
 
-            <div id="services-panel-besluta" role="tabpanel" aria-labelledby="services-tab-besluta" data-services-panel="besluta" class="rounded-2xl border border-white/10 border-l-4 border-l-yellow bg-white/5 p-6" hidden>
+            <div id="services-panel-besluta" role="tabpanel" aria-labelledby="services-tab-besluta" tabindex="-1" data-services-panel="besluta" class="scroll-mt-24 rounded-2xl border border-white/10 border-l-4 border-l-yellow bg-white/5 p-6" hidden>
                 <div class="grid gap-6 md:grid-cols-2 md:gap-10">
                     <div>
                         <h3 class="text-xl font-bold text-white">Välj hur mycket ni vill automatisera</h3>
@@ -177,7 +177,7 @@ published: true
                 </div>
             </div>
 
-            <div id="services-panel-aktivera" role="tabpanel" aria-labelledby="services-tab-aktivera" data-services-panel="aktivera" class="rounded-2xl border border-white/10 border-l-4 border-l-pink bg-white/5 p-6" hidden>
+            <div id="services-panel-aktivera" role="tabpanel" aria-labelledby="services-tab-aktivera" tabindex="-1" data-services-panel="aktivera" class="scroll-mt-24 rounded-2xl border border-white/10 border-l-4 border-l-pink bg-white/5 p-6" hidden>
                 <div class="grid gap-6 md:grid-cols-2 md:gap-10">
                     <div>
                         <h3 class="text-xl font-bold text-white">Från beslut till fysisk drift</h3>
@@ -199,7 +199,7 @@ published: true
                 </div>
             </div>
 
-            <div id="services-panel-visualisera" role="tabpanel" aria-labelledby="services-tab-visualisera" data-services-panel="visualisera" class="rounded-2xl border border-white/10 border-l-4 border-l-purple bg-white/5 p-6" hidden>
+            <div id="services-panel-visualisera" role="tabpanel" aria-labelledby="services-tab-visualisera" tabindex="-1" data-services-panel="visualisera" class="scroll-mt-24 rounded-2xl border border-white/10 border-l-4 border-l-purple bg-white/5 p-6" hidden>
                 <div class="grid gap-6 md:grid-cols-2 md:gap-10">
                     <div>
                         <h3 class="text-xl font-bold text-white">Se hela kedjan i samma lägesbild</h3>
@@ -216,7 +216,7 @@ published: true
                 </div>
             </div>
 
-            <div data-services-hover-preview="aktivera" class="rounded-2xl border border-white/10 border-l-4 border-l-pink bg-white/5 p-6" hidden>
+            <div data-services-hover-preview="aktivera" class="scroll-mt-24 rounded-2xl border border-white/10 border-l-4 border-l-pink bg-white/5 p-6" hidden>
                 <div class="grid gap-6 lg:grid-cols-3 lg:items-center lg:gap-10">
                     <div class="overflow-hidden rounded-xl border border-white/10 bg-navy p-2 lg:col-span-2">
                         <video class="h-72 w-full object-contain" muted loop playsinline preload="metadata" data-services-preview-media>
@@ -231,7 +231,7 @@ published: true
                 </div>
             </div>
 
-            <div data-services-hover-preview="besluta" class="rounded-2xl border border-white/10 border-l-4 border-l-yellow bg-white/5 p-6" hidden>
+            <div data-services-hover-preview="besluta" class="scroll-mt-24 rounded-2xl border border-white/10 border-l-4 border-l-yellow bg-white/5 p-6" hidden>
                 <div class="grid gap-6 lg:grid-cols-3 lg:items-center lg:gap-10">
                     <div class="overflow-hidden rounded-xl border border-white/10 bg-navy p-2 lg:col-span-2">
                         <img src="{{ site.baseurl }}/assets/video/besluta-da.gif" alt="Budläggning i Zizzla Planner" class="h-72 w-full object-contain" data-services-preview-media>
@@ -331,6 +331,11 @@ published: true
                 });
 
                 if (!activePreview) showSelectedPanel();
+                if (window.matchMedia('(max-width: 767px)').matches) {
+                    const panel = workflow.querySelector(`[data-services-panel="${tab.dataset.servicesTab}"]`);
+                    panel.focus({ preventScroll: true });
+                    panel.scrollIntoView({ block: 'start', behavior: 'instant' });
+                }
             });
         });
     })();
@@ -380,24 +385,31 @@ published: true
                 </div>
             </div>
 
-            <div tabindex="0" class="group rounded-lg border border-white/10 bg-white/5 p-6 transition duration-300 hover:-translate-y-1 hover:border-spring/50 focus:outline-none focus:border-spring/50">
+            <div tabindex="0" data-planner-demo x-data="{ active: false, mobile: window.matchMedia('(max-width: 767px)').matches }"
+                 x-on:resize.window="mobile = window.matchMedia('(max-width: 767px)').matches; if (!mobile) active = false"
+                 x-bind:data-active="active" x-bind:role="mobile ? 'button' : null" x-bind:aria-pressed="mobile ? active : null"
+                 x-on:click="if (mobile) active = !active"
+                 x-on:keydown.enter="if (mobile) { $event.preventDefault(); active = !active }"
+                 x-on:keydown.space="if (mobile) { $event.preventDefault(); active = !active }"
+                 class="group rounded-lg border border-white/10 bg-white/5 p-6 transition duration-300 md:hover:-translate-y-1 md:hover:border-spring/50 focus:outline-none focus:border-spring/50">
+                <p class="mb-4 text-sm text-spring md:hidden" x-text="active ? 'Tryck igen för att återställa exemplet' : 'Tryck för att testa budförslaget'">Tryck för att testa budförslaget</p>
                 <div class="flex items-center justify-between gap-4">
                     <div>
                         <p class="text-sm font-bold text-white">Zizzla Planner</p>
                         <p class="mt-1 text-sm text-white/50">Budförslag redo</p>
                     </div>
-                    <span class="rounded-full bg-white/10 px-3 py-1 text-sm text-white/60 transition duration-300 group-hover:bg-spring group-hover:text-navy group-focus:bg-spring group-focus:text-navy">
-                        <span class="group-hover:hidden group-focus:hidden">Skicka</span>
-                        <span class="hidden group-hover:inline group-focus:inline">Skickat</span>
+                    <span class="rounded-full bg-white/10 px-3 py-1 text-sm text-white/60 transition duration-300 md:group-hover:bg-spring max-md:group-data-[active=true]:bg-spring md:group-hover:text-navy max-md:group-data-[active=true]:text-navy md:group-focus:bg-spring max-md:group-data-[active=true]:bg-spring md:group-focus:text-navy max-md:group-data-[active=true]:text-navy">
+                        <span class="md:group-hover:hidden max-md:group-data-[active=true]:hidden md:group-focus:hidden max-md:group-data-[active=true]:hidden">Skicka</span>
+                        <span class="hidden md:group-hover:inline max-md:group-data-[active=true]:inline md:group-focus:inline max-md:group-data-[active=true]:inline">Skickat</span>
                     </span>
                 </div>
 
-                <svg class="mt-6 h-16 w-full opacity-70 transition duration-300 group-hover:opacity-100" viewBox="0 0 320 80" role="img" aria-label="Elplan, prisprognos och mFRR ned-bud">
+                <svg class="mt-6 h-16 w-full opacity-70 transition duration-300 md:group-hover:opacity-100 max-md:group-data-[active=true]:opacity-100" viewBox="0 0 320 80" role="img" aria-label="Elplan, prisprognos och mFRR ned-bud">
                     <path d="M16 48 H304" fill="none" class="stroke-spring" stroke-width="4" stroke-linecap="round" />
-                    <path d="M16 58 C64 54 96 56 128 46 S176 18 208 28 S260 50 304 42" fill="none" class="stroke-pink opacity-70 transition duration-300 group-hover:opacity-100 group-focus:opacity-100" stroke-width="3" stroke-linecap="round" />
-                    <path d="M142 48 C156 50 170 50 184 48 L184 64 C170 68 156 68 142 64 Z" class="fill-spring/10 stroke-spring/60 group-hover:hidden group-focus:hidden" stroke-width="2" stroke-dasharray="4 4" />
-                    <path d="M142 48 C156 50 170 50 184 48 L184 64 C170 68 156 68 142 64 Z" class="hidden fill-spring/30 stroke-spring group-hover:block group-focus:block" stroke-width="2" />
-                    <circle cx="164" cy="48" r="4" class="fill-spring transition duration-300 group-hover:fill-white group-focus:fill-white" />
+                    <path d="M16 58 C64 54 96 56 128 46 S176 18 208 28 S260 50 304 42" fill="none" class="stroke-pink opacity-70 transition duration-300 md:group-hover:opacity-100 max-md:group-data-[active=true]:opacity-100 md:group-focus:opacity-100 max-md:group-data-[active=true]:opacity-100" stroke-width="3" stroke-linecap="round" />
+                    <path d="M142 48 C156 50 170 50 184 48 L184 64 C170 68 156 68 142 64 Z" class="fill-spring/10 stroke-spring/60 md:group-hover:hidden max-md:group-data-[active=true]:hidden md:group-focus:hidden max-md:group-data-[active=true]:hidden" stroke-width="2" stroke-dasharray="4 4" />
+                    <path d="M142 48 C156 50 170 50 184 48 L184 64 C170 68 156 68 142 64 Z" class="hidden fill-spring/30 stroke-spring md:group-hover:block max-md:group-data-[active=true]:block md:group-focus:block max-md:group-data-[active=true]:block" stroke-width="2" />
+                    <circle cx="164" cy="48" r="4" class="fill-spring transition duration-300 md:group-hover:fill-white max-md:group-data-[active=true]:fill-white md:group-focus:fill-white max-md:group-data-[active=true]:fill-white" />
                 </svg>
 
                 <div class="mt-6 grid gap-3 text-sm">
@@ -437,12 +449,12 @@ published: true
 
                 <div class="mt-6">
                     <div class="h-2 rounded-full bg-white/10">
-                        <div class="h-2 w-2/3 rounded-full bg-white/40 transition-all duration-300 group-hover:w-full group-hover:bg-spring group-focus:w-full group-focus:bg-spring"></div>
+                        <div class="h-2 w-2/3 rounded-full bg-white/40 transition-all duration-300 md:group-hover:w-full max-md:group-data-[active=true]:w-full md:group-hover:bg-spring max-md:group-data-[active=true]:bg-spring md:group-focus:w-full max-md:group-data-[active=true]:w-full md:group-focus:bg-spring max-md:group-data-[active=true]:bg-spring"></div>
                     </div>
-                    <div class="mt-4 rounded bg-white/10 p-3 transition duration-300 group-hover:bg-spring/20 group-focus:bg-spring/20">
-                        <p class="text-sm font-bold text-white transition duration-300 group-hover:text-spring group-focus:text-spring">
-                            <span class="group-hover:hidden group-focus:hidden">Bud redo att skickas</span>
-                            <span class="hidden group-hover:inline group-focus:inline">Bud skickat till marknad</span>
+                    <div class="mt-4 rounded bg-white/10 p-3 transition duration-300 md:group-hover:bg-spring/20 max-md:group-data-[active=true]:bg-spring/20 md:group-focus:bg-spring/20 max-md:group-data-[active=true]:bg-spring/20">
+                        <p class="text-sm font-bold text-white transition duration-300 md:group-hover:text-spring max-md:group-data-[active=true]:text-spring md:group-focus:text-spring max-md:group-data-[active=true]:text-spring">
+                            <span class="md:group-hover:hidden max-md:group-data-[active=true]:hidden md:group-focus:hidden max-md:group-data-[active=true]:hidden">Bud redo att skickas</span>
+                            <span class="hidden md:group-hover:inline max-md:group-data-[active=true]:inline md:group-focus:inline max-md:group-data-[active=true]:inline">Bud skickat till marknad</span>
                         </p>
                     </div>
                 </div>
