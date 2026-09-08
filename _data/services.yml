@@ -53,8 +53,8 @@
   caption: Illustrativ produktvy · Portfölj och påverkan av mFRR-bud
   alt: Portföljgraf ur Zizzla Planner som jämför grundplanen med påverkan av mFRR-bud upp och ned.
 - id: fjarrstyrning
-  title: Fjärrstyrning
-  short_title: Fjärrstyrning
+  title: Aktivera
+  short_title: Aktivera
   icon: AKTIVERA.svg
   value: Från marknadsaktivering till fysisk drift.
   text: Zizzla kan omsätta en aktivering till ett kontrollerat börvärde för anläggningen. Effektiv och säker automation, från schemaläggare till elpannedrift, förenklar deltagande på marknaden dygnet runt.
@@ -63,7 +63,7 @@
     - Koppla schemaläggning till drift
     - Följ styrningen i samma arbetsflöde
   visual: video
-  caption: Fjärrstyrning · Aktivering av mFRR EAM
+  caption: Aktivera · Aktivering av mFRR EAM
 - id: administration
   title: Administration
   short_title: Administration
