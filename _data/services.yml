@@ -38,20 +38,6 @@
   crop: budgivning
   caption: Illustrativ produktvy · Öppna bud och granskning
   alt: Utsnitt ur Zizzla Planner med Open Bids, mFRR Energy och Review before submit.
-- id: visualisering
-  title: Visualisering
-  short_title: Visualisering
-  icon: VISUALISERA.svg
-  value: Se hur plan, bud och marknad påverkar drift och värde.
-  text: Få en tydlig överblick över data och beslutsunderlag genom intuitiva grafer och dashboards. Samla prognoser, plan och faktiskt utfall i en gemensam lägesbild.
-  benefits:
-    - Se portföljen i ett sammanhang
-    - Förstå hur bud påverkar drift
-    - Jämför plan med faktiskt utfall
-  visual: planner
-  crop: visualisering
-  caption: Illustrativ produktvy · Portfölj och påverkan av mFRR-bud
-  alt: Portföljgraf ur Zizzla Planner som jämför grundplanen med påverkan av mFRR-bud upp och ned.
 - id: fjarrstyrning
   title: Aktivera
   short_title: Aktivera
@@ -64,6 +50,20 @@
     - Följ styrningen i samma arbetsflöde
   visual: video
   caption: Aktivera · Aktivering av mFRR EAM
+- id: visualisering
+  title: Visualisering
+  short_title: Visualisering
+  icon: VISUALISERA.svg
+  value: Se hur plan, bud och marknad påverkar drift och värde.
+  text: Få en tydlig överblick över data och beslutsunderlag genom intuitiva grafer och dashboards. Samla prognoser, plan och faktiskt utfall i en gemensam lägesbild.
+  benefits:
+    - Se plan och bud per resurs
+    - Se budens produktionseffekt
+    - Jämför plan med faktiskt utfall
+  visual: planner
+  crop: visualisering
+  caption: Illustrativ produktvy · Portfölj och påverkan av mFRR-bud
+  alt: Portföljgraf ur Zizzla Planner som jämför grundplanen med påverkan av mFRR-bud upp och ned.
 - id: administration
   title: Administration
   short_title: Administration
@@ -71,9 +71,9 @@
   value: Följ upp resultat, positioner och värdeskapande på samma ställe.
   text: Smidig uppföljning av intäkter, kostnader och produktion – allt samlat i ett användarvänligt gränssnitt. Samla resultat och status för att förenkla administrationen och få bättre underlag för nästa beslut.
   benefits:
-    - Samla intäkter och kostnader
+    - Jämför intäkt och kostnad
     - Följ produktion och positioner
-    - Håll ihop resultat och status
+    - Följ utfallet av lagda bud
   visual: planner
   crop: administration
   caption: Illustrativ produktvy · Granskning, status och värde

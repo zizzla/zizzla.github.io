@@ -68,6 +68,9 @@ published: true
                             <img alt="{% if copy == 1 %}Tranås energi{% endif %}" src="{{site.baseurl}}/assets/img/logo_tranasenergi.png" width="865" height="429" class="{{ logo_style }}">
                             <img alt="{% if copy == 1 %}Energimyndigheten{% endif %}" src="{{site.baseurl}}/assets/img/logo_energimyndigheten.svg" width="178" height="43" style="aspect-ratio: 177.776 / 42.5197" class="{{ logo_style }}">
                             <img alt="{% if copy == 1 %}Inclusive Business Partners{% endif %}" src="{{site.baseurl}}/assets/img/logo_inclusive_business.png" width="2048" height="459" class="{{ logo_style }}">
+                            <!-- Officiella original: https://bixia.se/assets/logos/bixia.svg och https://www.axpo.com/bin/logo-svg (statisk export). -->
+                            <img alt="{% if copy == 1 %}Bixia{% endif %}" src="{{site.baseurl}}/assets/img/logo_bixia.svg" width="164" height="52" class="{{ logo_style }}">
+                            <img alt="{% if copy == 1 %}Axpo{% endif %}" src="{{site.baseurl}}/assets/img/logo_axpo.svg" width="330" height="130" class="{{ logo_style }}">
                         </div>
                         {% endfor %}
                     </div>
