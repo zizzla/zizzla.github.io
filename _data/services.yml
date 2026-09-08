@@ -1,0 +1,80 @@
+- id: optimering
+  title: Produktionsoptimering
+  short_title: Optimering
+  icon: PLANERA.svg
+  value: Hitta den bästa planen innan dygnet börjar.
+  text: Vår egenutvecklade driftoptimeringsmodell kan hantera upp till sju marknader samtidigt. Vi fokuserar på värdeskapande och erbjuder en kraftfull optimeringsmotor till ett konkurrenskraftigt pris. Anläggningens förutsättningar och begränsningar följer med hela vägen till körplanen.
+  benefits:
+    - Väg samman flera marknader
+    - Planera utifrån anläggningens möjligheter
+    - Jämför körplaner och ekonomiskt värde
+  visual: planner
+  crop: optimering
+  caption: Illustrativ produktvy · Optimering och aktuell plan
+  alt: Utsnitt ur Zizzla Planner med Optimizer, Current plan och Difference samt portföljens körplan.
+- id: prognos
+  title: Prognosmotor
+  short_title: Prognoser
+  icon: PLANERA.svg
+  value: Förstå morgondagen innan ni planerar den.
+  text: Skräddarsydda spotprisprognoser och lastprognoser anpassade efter ditt bolags unika behov. Ett gemensamt underlag gör det enklare att gå från förväntad efterfrågan och marknadspris till nästa beslut.
+  benefits:
+    - Lastprognoser för er verksamhet
+    - Spotprisprognoser som planeringsunderlag
+    - Samma underlag för optimering och beslut
+  visual: forecast
+  caption: Prognosmotor · Exempel från Zizzla
+- id: budgivning
+  title: Budgivningsplattform
+  short_title: Budgivning
+  icon: BESLUTA.svg
+  value: Från optimal plan till marknaden – med färre manuella steg.
+  text: Skapa realistiska bud till el- och balansmarknaden med ett enkelt knapptryck. Rätt tid, rätt storlek och rätt pris står i centrum. Granska förslagen innan de skickas och välj hur mycket ni vill automatisera.
+  benefits:
+    - Budförslag som följer körplanen
+    - Samlad granskning före skickning
+    - Stöd för el- och balansmarknader
+  visual: planner
+  crop: budgivning
+  caption: Illustrativ produktvy · Öppna bud och granskning
+  alt: Utsnitt ur Zizzla Planner med Open Bids, mFRR Energy och Review before submit.
+- id: visualisering
+  title: Visualisering
+  short_title: Visualisering
+  icon: VISUALISERA.svg
+  value: Se hur plan, bud och marknad påverkar drift och värde.
+  text: Få en tydlig överblick över data och beslutsunderlag genom intuitiva grafer och dashboards. Samla prognoser, plan och faktiskt utfall i en gemensam lägesbild.
+  benefits:
+    - Se portföljen i ett sammanhang
+    - Förstå hur bud påverkar drift
+    - Jämför plan med faktiskt utfall
+  visual: planner
+  crop: visualisering
+  caption: Illustrativ produktvy · Portfölj och påverkan av mFRR-bud
+  alt: Portföljgraf ur Zizzla Planner som jämför grundplanen med påverkan av mFRR-bud upp och ned.
+- id: fjarrstyrning
+  title: Fjärrstyrning
+  short_title: Fjärrstyrning
+  icon: AKTIVERA.svg
+  value: Från marknadsaktivering till fysisk drift.
+  text: Zizzla kan omsätta en aktivering till ett kontrollerat börvärde för anläggningen. Effektiv och säker automation, från schemaläggare till elpannedrift, förenklar deltagande på marknaden dygnet runt.
+  benefits:
+    - Omsätt aktivering till börvärden
+    - Koppla schemaläggning till drift
+    - Följ styrningen i samma arbetsflöde
+  visual: video
+  caption: Fjärrstyrning · Aktivering av mFRR EAM
+- id: administration
+  title: Administration
+  short_title: Administration
+  icon: zizzla-services-system.svg
+  value: Följ upp resultat, positioner och värdeskapande på samma ställe.
+  text: Smidig uppföljning av intäkter, kostnader och produktion – allt samlat i ett användarvänligt gränssnitt. Samla resultat och status för att förenkla administrationen och få bättre underlag för nästa beslut.
+  benefits:
+    - Samla intäkter och kostnader
+    - Följ produktion och positioner
+    - Håll ihop resultat och status
+  visual: planner
+  crop: administration
+  caption: Illustrativ produktvy · Granskning, status och värde
+  alt: Granskningspanelen i Zizzla Planner med budstatus, validering och jämförelse av ekonomiskt värde.

@@ -1,0 +1,27 @@
+{% assign service = include.service %}
+<figure class="min-w-0">
+  {% case service.visual %}
+  {% when 'planner' %}
+  <div class="service-crop service-crop--{{ service.crop }} overflow-hidden rounded-2xl border border-navy/10 bg-white">
+    <img src="{{ '/assets/img/services/planner-vision.png' | relative_url }}" width="1122" height="1402" alt="{{ service.alt | escape }}" loading="lazy">
+  </div>
+  {% when 'forecast' %}
+  <div class="flex min-h-64 items-center overflow-hidden rounded-2xl border border-navy/10 bg-white p-3 sm:p-5">
+    <img src="{{ '/assets/img/Services_prognos.png' | relative_url }}" width="1641" height="810" alt="Exempel på Zizzlas prognosvy med tidsserier och prognosunderlag." class="h-auto w-full" loading="lazy">
+  </div>
+  {% when 'video' %}
+  <div class="overflow-hidden rounded-2xl border border-navy/10 bg-navy">
+    <video class="aspect-video w-full object-contain" muted loop playsinline controls preload="none" aria-label="Demonstration av mFRR EAM-aktivering och fjärrstyrning i Zizzla">
+      <source src="{{ '/assets/video/services/aktivera-mfrr-eam.mp4' | relative_url }}" type="video/mp4">
+      Din webbläsare kan inte visa videon. <a href="{{ '/assets/video/services/aktivera-mfrr-eam.mp4' | relative_url }}">Öppna aktiveringsvideon</a>.
+    </video>
+  </div>
+  {% endcase %}
+  <figcaption class="mt-3 text-xs leading-5 text-navy/60">{{ service.caption }}</figcaption>
+  {% if service.id == 'budgivning' %}
+  <details class="mt-4 rounded-xl border border-navy/15 p-4">
+    <summary class="cursor-pointer text-sm font-bold text-navy">Se budläggning i Zizzla Planner</summary>
+    <img src="{{ '/assets/video/besluta-da.gif' | relative_url }}" alt="Produktklipp som visar budläggning i Zizzla Planner." class="mt-4 h-auto w-full rounded-lg" loading="lazy">
+  </details>
+  {% endif %}
+</figure>

@@ -46,3 +46,15 @@
 @media (width < 48rem) {
   html.mobile-menu-open { overflow: hidden; }
 }
+
+/* Reuse the original Planner image: these crops can be replaced independently. */
+.services-page .service-crop { position: relative; aspect-ratio: 4 / 3; }
+.services-page .service-crop img { position: absolute; width: 145%; max-width: none; height: auto; }
+.services-page .service-crop--optimering img { transform: translate(-14%, -8%); }
+.services-page .service-crop--budgivning img { transform: translate(-14%, -47%); }
+.services-page .service-crop--visualisering img { transform: translate(-14%, -18%); }
+.services-page .service-crop--administration img { width: 220%; transform: translate(-54%, -70%); }
+.services-page .service-symbol--administration { width: 280%; max-width: none; height: auto; transform: translate(-25%, -61%); }
+@media (width < 40rem) {
+  .services-page .service-symbol { height: 2.5rem; width: 2.5rem; }
+}
