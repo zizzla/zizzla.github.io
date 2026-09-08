@@ -40,11 +40,12 @@
 
   <div id="mobile-navigation" x-cloak
        x-show="mobileMenuIsOpen"
+       @click.outside="mobileMenuIsOpen = false"
        @click="if ($event.target.closest('a')) mobileMenuIsOpen = false"
-       class="absolute top-full left-0 z-40 h-[calc(100dvh-5rem)] w-full overflow-y-auto bg-navy md:hidden">
+       class="absolute top-full left-0 z-40 max-h-[calc(100dvh-5rem)] w-full overflow-y-auto border-b border-white/10 bg-navy shadow-xl md:hidden">
 
-      <div class="flex flex-col items-center justify-center min-h-full space-y-10 px-6 py-10">
-          <ul class="flex flex-col items-center space-y-8 text-2xl font-black uppercase tracking-[0.2em] text-white">
+      <div class="flex flex-col items-center px-6 py-4">
+          <ul class="flex flex-col items-center gap-2 text-2xl font-black uppercase tracking-[0.2em] text-white">
               {%- include nav-items.html paths = page_paths %}
           </ul>
 

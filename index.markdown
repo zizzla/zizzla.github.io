@@ -91,7 +91,7 @@ published: true
             <p class="mt-4 text-base leading-7 text-white/60">Från prognos till fysisk aktivering – i ett sammanhängande arbetsflöde.</p>
         </div>
 
-        <div class="mt-10 grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4" role="tablist" aria-label="Zizzlas arbetsflöde">
+        <div class="scroll-mt-24 mt-10 grid grid-cols-2 gap-3 md:gap-4 lg:grid-cols-4" role="tablist" aria-label="Zizzlas arbetsflöde">
             <button type="button" id="services-tab-planera" role="tab" aria-selected="true" aria-controls="services-panel-planera" data-services-tab="planera" class="group relative overflow-hidden rounded-lg border border-white/10 border-l-4 border-l-spring bg-white/5 p-3 md:p-6 text-left transition duration-300 aria-selected:border-spring aria-selected:bg-white/10 focus:outline-none focus-visible:ring-2 focus-visible:ring-spring lg:hover:-translate-y-1 lg:hover:border-spring/50">
                 <img src="{{ site.baseurl }}/assets/img/services/PLANERA.svg" alt="" class="absolute inset-0 h-full w-full object-cover opacity-30 transition duration-300 group-aria-selected:opacity-60 lg:group-hover:opacity-60">
                 <div class="absolute inset-0 bg-gradient-to-r from-navy/90 via-navy/70 to-navy/30"></div>
@@ -332,9 +332,9 @@ published: true
 
                 if (!activePreview) showSelectedPanel();
                 if (window.matchMedia('(max-width: 767px)').matches) {
-                    const panel = workflow.querySelector(`[data-services-panel="${tab.dataset.servicesTab}"]`);
-                    panel.focus({ preventScroll: true });
-                    panel.scrollIntoView({ block: 'start', behavior: 'instant' });
+                    // Keep all four choices visible above the selected details.
+                    const choices = workflow.querySelector('[role="tablist"]');
+                    choices.scrollIntoView({ block: 'start', behavior: 'instant' });
                 }
             });
         });
