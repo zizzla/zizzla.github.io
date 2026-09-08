@@ -20,15 +20,21 @@ description: Zizzla samlar prognoser, optimering, budgivning, styrning och uppf�
     </figure>
   </section>
 
-  <section class="border-t border-white/10 py-16 lg:py-24" aria-labelledby="system-title">
+  <section class="rounded-3xl border border-spring/20 bg-white/[0.025] px-4 py-12 sm:px-8 lg:py-16" aria-labelledby="system-title">
     <div class="mx-auto max-w-2xl text-center">
-      <p class="text-xs font-bold uppercase tracking-[0.2em] text-spring">Zizzla som system</p>
+      <p class="text-xs font-bold uppercase tracking-[0.2em] text-spring">Systemöversikt · Sex delar, ett Zizzla</p>
       <h2 id="system-title" class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Allt hänger ihop</h2>
       <p class="mt-5 text-base leading-7 text-white/70">Zizzlas tjänster är inte separata verktyg. Prognoser, optimering, budgivning, styrning, visualisering och uppföljning är delar av samma arbetsflöde.</p>
     </div>
-    <figure class="mx-auto mt-10 max-w-4xl">
+    <p class="mt-6 text-center text-sm text-spring">Välj en form och utforska tjänsten. Samma symboler följer med nedan.</p>
+    <div class="system-map relative mx-auto mt-8 max-w-4xl">
       <img src="{{ '/assets/img/services/zizzla-services-system.svg' | relative_url }}" width="4652" height="3352" alt="Zizzlas samlade formspråk: planering, beslut, styrning och visualisering binds samman med kugghjul och symboler för utveckling och värde." class="h-auto w-full" loading="lazy">
-    </figure>
+      {% for service in site.data.services %}
+      <a href="#service-{{ service.id }}" data-system-service="{{ service.id }}" aria-controls="service-{{ service.id }}" aria-label="Utforska {{ service.title | escape }}" class="system-hotspot system-hotspot--{{ service.id }}">
+        <span class="system-label"><span aria-hidden="true">0{{ forloop.index }}</span><span class="sr-only sm:not-sr-only"> {{ service.short_title }}</span></span>
+      </a>
+      {% endfor %}
+    </div>
     <ol class="mt-8 flex flex-wrap items-center justify-center gap-x-4 gap-y-3 text-sm font-bold text-white/80" aria-label="Från prognos till uppföljning">
       {% assign stages = 'Prognos,Optimering,Budgivning,Drift,Uppföljning' | split: ',' %}
       {% for stage in stages %}<li class="flex items-center gap-4">{% unless forloop.first %}<span class="text-spring" aria-hidden="true">→</span>{% endunless %}{{ stage }}</li>{% endfor %}
@@ -41,13 +47,13 @@ description: Zizzla samlar prognoser, optimering, budgivning, styrning och uppf�
       <h2 id="offer-title" class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Utforska ert nästa steg</h2>
       <p class="mt-4 leading-7 text-white/70">Välj en del av arbetsflödet och se hur den hänger ihop med resten.</p>
     </div>
-    <div class="service-choices grid grid-cols-2 gap-2 sm:grid-cols-3 lg:grid-cols-6" aria-label="Välj tjänst" data-service-choices>
+    <div class="service-choices scroll-mt-24 grid grid-cols-2 gap-x-3 gap-y-4 sm:grid-cols-3 lg:grid-cols-6" aria-label="Välj tjänst" data-service-choices>
       {% for service in site.data.services %}
-      <a id="service-tab-{{ service.id }}" href="#service-{{ service.id }}" data-service-choice="{{ service.id }}" class="group flex min-w-0 flex-col items-center gap-2 rounded-2xl border border-transparent px-2 py-3 text-center hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-spring aria-selected:border-spring/70 aria-selected:bg-white/5">
-        <span class="service-symbol relative block h-16 w-16 overflow-hidden sm:h-20 sm:w-20">
-          <img src="{{ '/assets/img/services/' | append: service.icon | relative_url }}" alt="" width="80" height="80" class="h-full w-full object-contain opacity-70 group-hover:opacity-100 group-aria-selected:opacity-100 {% if service.id == 'administration' %}service-symbol--administration{% endif %}" loading="lazy">
+      <a id="service-tab-{{ service.id }}" href="#service-{{ service.id }}" data-service-choice="{{ service.id }}" class="service-choice group flex min-w-0 flex-col items-center gap-3 border-b-2 border-transparent px-1 py-4 text-center focus-visible:outline-2 focus-visible:outline-spring aria-selected:border-spring aria-selected:text-spring">
+        <span class="service-symbol relative block h-20 w-20 overflow-hidden lg:h-28 lg:w-28">
+          <img src="{{ '/assets/img/services/' | append: service.icon | relative_url }}" alt="" width="80" height="80" class="h-full w-full object-contain opacity-70 group-hover:opacity-100 group-aria-selected:opacity-100 {% if service.id == 'administration' or service.id == 'optimering' %}service-symbol--{{ service.id }}{% endif %}" loading="lazy">
         </span>
-        <span class="text-xs font-bold leading-5 sm:text-sm">{{ service.short_title }}</span>
+        <span class="flex items-center gap-2 text-xs font-bold leading-5 sm:text-sm"><span class="text-spring/70" aria-hidden="true">0{{ forloop.index }}</span>{{ service.short_title }}</span>
       </a>
       {% endfor %}
     </div>
@@ -91,11 +97,16 @@ description: Zizzla samlar prognoser, optimering, budgivning, styrning och uppf�
   const explorer = document.querySelector('[data-service-explorer]');
   const choices = [...explorer.querySelectorAll('[data-service-choice]')];
   const panels = [...explorer.querySelectorAll('[data-service-content]')];
+  const systemLinks = [...document.querySelectorAll('[data-system-service]')];
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
   const select = (choice) => {
     choices.forEach(item => {
       item.setAttribute('aria-selected', String(item === choice));
       item.tabIndex = item === choice ? 0 : -1;
+    });
+    systemLinks.forEach(link => {
+      if (link.dataset.systemService === choice.dataset.serviceChoice) link.setAttribute('aria-current', 'true');
+      else link.removeAttribute('aria-current');
     });
     panels.forEach(panel => {
       panel.hidden = panel.dataset.serviceContent !== choice.dataset.serviceChoice;
@@ -106,6 +117,16 @@ description: Zizzla samlar prognoser, optimering, budgivning, styrning och uppf�
       }
     });
   };
+  systemLinks.forEach(link => {
+    link.addEventListener('click', event => {
+      const choice = choices.find(item => item.dataset.serviceChoice === link.dataset.systemService);
+      if (!choice) return;
+      event.preventDefault();
+      select(choice);
+      explorer.querySelector('[data-service-choices]').scrollIntoView({ block: 'start', behavior: 'instant' });
+      choice.focus({ preventScroll: true });
+    });
+  });
   explorer.querySelector('[data-service-choices]').setAttribute('role', 'tablist');
   choices.forEach((choice, index) => {
     choice.setAttribute('role', 'tab');

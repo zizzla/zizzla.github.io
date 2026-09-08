@@ -13,7 +13,7 @@
 - id: optimering
   title: Produktionsoptimering
   short_title: Optimering
-  icon: PLANERA.svg
+  icon: zizzla-services-system.svg
   value: Hitta den bästa planen innan dygnet börjar.
   text: Vår egenutvecklade driftoptimeringsmodell kan hantera upp till sju marknader samtidigt. Vi fokuserar på värdeskapande och erbjuder en kraftfull optimeringsmotor till ett konkurrenskraftigt pris. Anläggningens förutsättningar och begränsningar följer med hela vägen till körplanen.
   benefits:
@@ -23,7 +23,7 @@
   visual: planner
   crop: optimering
   caption: Illustrativ produktvy · Optimering och aktuell plan
-  alt: Utsnitt ur Zizzla Planner med Optimizer, Current plan och Difference samt portföljens körplan.
+  alt: Utsnitt ur Zizzla Planner med Optimizer, Current plan och Difference för jämförelse av ekonomiskt värde.
 - id: budgivning
   title: Budgivningsplattform
   short_title: Budgivning

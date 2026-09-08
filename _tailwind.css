@@ -50,11 +50,29 @@
 /* Reuse the original Planner image: these crops can be replaced independently. */
 .services-page .service-crop { position: relative; aspect-ratio: 4 / 3; }
 .services-page .service-crop img { position: absolute; width: 145%; max-width: none; height: auto; }
+.services-page .service-crop--optimering { aspect-ratio: 5 / 1; }
 .services-page .service-crop--optimering img { transform: translate(-14%, -8%); }
 .services-page .service-crop--budgivning img { transform: translate(-14%, -47%); }
+.services-page .service-crop--visualisering { aspect-ratio: 1.85 / 1; }
 .services-page .service-crop--visualisering img { transform: translate(-14%, -18%); }
 .services-page .service-crop--administration img { width: 220%; transform: translate(-54%, -70%); }
-.services-page .service-symbol--administration { width: 280%; max-width: none; height: auto; transform: translate(-25%, -61%); }
+.services-page .service-symbol--administration { width: 280%; max-width: none; height: auto; transform: translate(-25%, -61%); clip-path: inset(72% 0 0 0); }
 @media (width < 40rem) {
-  .services-page .service-symbol { height: 2.5rem; width: 2.5rem; }
+  .services-page .service-symbol { height: 4rem; width: 4rem; }
 }
+
+/* The service explorer and system overview share the original Zizzla forms. */
+.services-page .service-symbol--optimering { width: 320%; max-width: none; height: auto; transform: translate(-28%, 5%); clip-path: inset(0 0 71% 0); }
+.services-page .service-choice[aria-selected="true"] .service-symbol {
+  filter: drop-shadow(0 0 7px color-mix(in srgb, var(--color-spring) 35%, transparent));
+}
+.services-page .system-hotspot { position: absolute; border-radius: 1rem; }
+.services-page .system-hotspot:hover, .services-page .system-hotspot:focus-visible { outline: 2px solid var(--color-spring); outline-offset: 2px; }
+.services-page .system-label { position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); white-space: nowrap; border: 1px solid color-mix(in srgb, white 25%, transparent); border-radius: 2rem; padding: .35rem .6rem; color: white; background: var(--color-navy); font-size: .75rem; font-weight: 700; }
+.services-page .system-hotspot[aria-current="true"] .system-label { color: var(--color-navy); background: var(--color-spring); }
+.services-page .system-hotspot--prognos { left: 0; top: 28%; width: 25%; height: 43%; }
+.services-page .system-hotspot--optimering { left: 31%; top: 0; width: 29%; height: 28%; }
+.services-page .system-hotspot--budgivning { left: 26%; top: 30%; width: 22%; height: 43%; }
+.services-page .system-hotspot--fjarrstyrning { left: 49%; top: 32%; width: 23%; height: 40%; }
+.services-page .system-hotspot--visualisering { left: 74%; top: 27%; width: 26%; height: 47%; }
+.services-page .system-hotspot--administration { left: 27%; top: 74%; width: 45%; height: 26%; }
