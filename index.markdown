@@ -44,11 +44,45 @@ published: true
                     Jonglerar du <span class="text-white">säker drift</span> <br>
                     med krav på <span class="text-white">högre avkastning</span>?
                 </h1>
-                <div class="space-y-6 mb-12">
-                    <p class="text-2xl md:text-3xl font-bold tracking-wide text-white">Det behöver inte vara så svårt.</p>
-                    <p class="text-lg md:text-xl font-light tracking-wide text-white/80 max-w-2xl mx-auto">Med <span class="text-spring">Zizzla</span> får du ett optimalt körschema för varje situation och marknad.</p>
+                <div class="hero-pitch space-y-6 mb-8">
+                    <p>
+                        <span class="block text-xl md:text-2xl font-medium text-white/90"><span class="text-spring">Zizzla</span> är</span>
+                        <span class="sr-only">dirigenten för el- och värmeproduktionen, länken mellan elmarknaden och anläggningen och verktyget som får plan, bud och drift att hänga ihop.</span>
+                        <span class="hero-phrases" aria-hidden="true">
+                            <span class="hero-phrase is-active">dirigenten för el- och värmeproduktionen</span>
+                            <span class="hero-phrase">länken mellan elmarknaden och anläggningen</span>
+                            <span class="hero-phrase">verktyget som får plan, bud och drift att hänga ihop</span>
+                        </span>
+                    </p>
+                    <p class="text-lg md:text-xl font-medium text-white">För fjärrvärmebolag och industri.</p>
+                    <p class="text-base md:text-lg font-light text-white/80 max-w-2xl mx-auto">Prognoser, optimering, marknad och fysisk drift – i ett sammanhängande arbetsflöde.</p>
                 </div>
-                <!-- <a href="#nyfiken" class="inline-block px-12 py-5 bg-spring text-navy font-black text-xl uppercase tracking-widest rounded-full hover:scale-105 transition-transform">Nyfiken?</a> -->
+                <a href="mailto:{{ site.email }}" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog" class="inline-flex rounded-full bg-spring px-8 py-4 font-bold text-navy hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-spring">Nyfiken? Hör av dig.</a>
+                <script>
+                (() => {
+                    const phrases = [...document.querySelectorAll('.hero-phrase')];
+                    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+                    let current = 0;
+                    let timer;
+                    function start() {
+                        window.clearInterval(timer);
+                        if (motion.matches) {
+                            phrases.forEach((phrase, index) => phrase.classList.toggle('is-active', index === 0));
+                            current = 0;
+                        }
+                        if (motion.matches || document.hidden) return;
+                        timer = window.setInterval(() => {
+                            phrases[0].parentElement.classList.add('is-rotating');
+                            phrases[current].classList.remove('is-active');
+                            current = (current + 1) % phrases.length;
+                            phrases[current].classList.add('is-active');
+                        }, 3500);
+                    }
+                    motion.addEventListener('change', start);
+                    document.addEventListener('visibilitychange', start);
+                    start();
+                })();
+                </script>
             </div>
         </div>
 

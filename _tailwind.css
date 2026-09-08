@@ -87,3 +87,30 @@
 .services-page .system-hotspot--fjarrstyrning { left: 49%; top: 32%; width: 23%; height: 40%; }
 .services-page .system-hotspot--visualisering { left: 74%; top: 27%; width: 26%; height: 47%; }
 .services-page .system-hotspot--administration { left: 27%; top: 74%; width: 45%; height: 26%; }
+
+/* All phrases occupy the same grid cell and contribute to its stable height. */
+.hero-phrases {
+  display: grid;
+  margin: 0.5rem auto 0;
+  max-width: 48rem;
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: white;
+}
+.hero-phrase {
+  grid-area: 1 / 1;
+  opacity: 0;
+  transform: translateY(0.3rem);
+}
+.hero-phrases.is-rotating .hero-phrase {
+  transition: opacity 250ms ease, transform 250ms ease;
+}
+.hero-phrase.is-active {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  .hero-phrases .hero-phrase { transform: none; }
+  .hero-phrases.is-rotating .hero-phrase { transition: none; }
+}
