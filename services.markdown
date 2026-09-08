@@ -16,7 +16,7 @@ description: Zizzla samlar prognoser, optimering, budgivning, styrning och uppf�
     </div>
     <figure class="min-w-0 lg:col-span-3">
       <img src="{{ '/assets/img/services/planner-vision.png' | relative_url }}" width="1122" height="1402" alt="Illustrativ produktvy av Zizzla Planner med optimering, portföljgraf, marknadsbud och granskning i samma arbetsyta." class="h-auto w-full rounded-2xl border border-white/15" fetchpriority="high">
-      <figcaption class="mt-3 flex flex-wrap justify-between gap-2 text-xs text-white/50"><span>Illustrativ produktvy</span><a href="{{ '/assets/img/services/planner-vision.png' | relative_url }}" class="underline underline-offset-4 hover:text-white">Öppna bilden i full storlek</a></figcaption>
+      <figcaption class="mt-3 flex flex-wrap justify-between gap-2 text-xs leading-5 text-white/50"><span>Illustrativ produktvy</span><a href="{{ '/assets/img/services/planner-vision.png' | relative_url }}" class="underline underline-offset-4 hover:text-white">Öppna bilden i full storlek</a></figcaption>
     </figure>
   </section>
 
@@ -26,9 +26,9 @@ description: Zizzla samlar prognoser, optimering, budgivning, styrning och uppf�
       <h2 id="system-title" class="mt-4 text-3xl font-bold tracking-tight sm:text-4xl">Allt hänger ihop</h2>
       <p class="mt-5 text-base leading-7 text-white/70">Zizzlas tjänster är inte separata verktyg. Prognoser, optimering, budgivning, styrning, visualisering och uppföljning är delar av samma arbetsflöde.</p>
     </div>
-    <p class="mt-6 text-center text-sm text-spring">Välj en form och utforska tjänsten. Samma symboler följer med nedan.</p>
+    <p class="mt-6 text-center text-sm text-spring">Välj en form och utforska tjänsten.</p>
     <div class="system-map relative mx-auto mt-8 max-w-4xl">
-      <img src="{{ '/assets/img/services/zizzla-services-system.svg' | relative_url }}" width="4652" height="3352" alt="Zizzlas samlade formspråk: planering, beslut, styrning och visualisering binds samman med kugghjul och symboler för utveckling och värde." class="h-auto w-full" loading="lazy">
+      <img src="{{ '/assets/img/services/zizzla-services-system.png' | relative_url }}" width="1600" height="1153" alt="Zizzlas samlade formspråk: planering, beslut, styrning och visualisering binds samman med kugghjul och symboler för utveckling och värde." class="h-auto w-full" decoding="async">
       {% for service in site.data.services %}
       <a href="#service-{{ service.id }}" data-system-service="{{ service.id }}" aria-controls="service-{{ service.id }}" aria-label="Utforska {{ service.title | escape }}" class="system-hotspot system-hotspot--{{ service.id }}">
         <span class="system-label"><span aria-hidden="true">0{{ forloop.index }}</span><span class="sr-only sm:not-sr-only"> {{ service.short_title }}</span></span>
@@ -75,20 +75,20 @@ description: Zizzla samlar prognoser, optimering, budgivning, styrning och uppf�
     {% endfor %}
   </section>
 
-  <section class="border-t border-white/10 py-16 lg:py-24" aria-labelledby="day-title">
+  <section class="border-t border-white/10 py-10 lg:py-12" aria-labelledby="day-title">
     <h2 id="day-title" class="text-3xl font-bold tracking-tight sm:text-4xl">Ett arbetsflöde genom hela dygnet</h2>
-    <ol class="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-5">
+    <ol class="mt-6 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
       {% assign titles = 'Förstå morgondagen|Hitta bästa planen|Lägg bud|Kör säkert|Följ upp' | split: '|' %}
-      {% assign descriptions = 'Pris- och lastprognoser ger bättre planeringsunderlag.|Optimeringen väger samman anläggningar, begränsningar och marknader.|Skapa och skicka realistiska bud med tydlig kontroll.|Aktiveringar kan omsättas till börvärden och styrning.|Se resultat, positioner och ekonomiskt värde.' | split: '|' %}
+      {% assign descriptions = 'Pris- och lastprognoser.|Optimera resurser och marknader.|Granska och skicka realistiska bud.|Omsätt aktivering till kontrollerad drift.|Samla resultat, positioner och värde.' | split: '|' %}
       {% for title in titles %}
-      <li class="border-t border-spring/40 pt-4"><span class="text-sm font-bold text-spring">0{{ forloop.index }}</span><h3 class="mt-3 text-lg font-bold">{{ title }}</h3><p class="mt-3 text-sm leading-6 text-white/60">{{ descriptions[forloop.index0] }}</p></li>
+      <li class="grid grid-cols-[auto_1fr] gap-x-3 border-t border-spring/40 pt-3 lg:block"><span class="row-span-2 text-sm font-bold text-spring">0{{ forloop.index }}</span><h3 class="text-base font-bold lg:mt-2">{{ title }}</h3><p class="col-start-2 mt-1 text-sm leading-6 text-white/60">{{ descriptions[forloop.index0] }}</p></li>
       {% endfor %}
     </ol>
   </section>
 
   <section class="mb-16 rounded-3xl border border-spring/20 bg-white/5 px-6 py-12 text-center sm:px-12 sm:py-16">
     <h2 class="mx-auto max-w-2xl text-3xl font-bold tracking-tight sm:text-4xl">Nyfiken på hur Zizzla skulle fungera i er anläggning?</h2>
-    <a href="mailto:{{ site.email }}" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog" class="mt-8 inline-flex rounded-full bg-spring px-8 py-4 font-bold text-navy hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-spring">Visa mig Zizzla</a>
+    <a href="mailto:{{ site.email }}" data-contact-open aria-haspopup="dialog" aria-controls="contact-dialog" class="mt-8 inline-flex rounded-full bg-spring px-8 py-4 font-bold text-navy hover:opacity-90 focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-spring">Nyfiken? Hör av dig.</a>
   </section>
 </div>
 

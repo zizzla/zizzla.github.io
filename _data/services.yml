@@ -13,7 +13,7 @@
 - id: optimering
   title: Produktionsoptimering
   short_title: Optimering
-  icon: zizzla-services-system.svg
+  icon: zizzla-services-system.png
   value: Hitta den bästa planen innan dygnet börjar.
   text: Vår egenutvecklade driftoptimeringsmodell kan hantera upp till sju marknader samtidigt. Vi fokuserar på värdeskapande och erbjuder en kraftfull optimeringsmotor till ett konkurrenskraftigt pris. Anläggningens förutsättningar och begränsningar följer med hela vägen till körplanen.
   benefits:
@@ -29,7 +29,7 @@
   short_title: Budgivning
   icon: BESLUTA.svg
   value: Från optimal plan till marknaden – med färre manuella steg.
-  text: Skapa realistiska bud till el- och balansmarknaden med ett enkelt knapptryck. Rätt tid, rätt storlek och rätt pris står i centrum. Granska förslagen innan de skickas och välj hur mycket ni vill automatisera. Pricka rätt med budstrategier som tar hänsyn till driften. Vi utökar löpande utbudet av budtyper – valet behöver matcha resursens förmåga. En snabb elpanna och ett kraftvärmeverk har olika förutsättningar för prisberoende bud.
+  text: Gå från körplan till realistiska bud på el- och balansmarknaden. Granska förslagen före skickning och välj graden av automation. Vi utökar löpande utbudet av budtyper, med budstrategier som behöver matcha resursens tekniska förmåga. En snabb elpanna och ett kraftvärmeverk har olika förutsättningar för prisberoende bud – driften sätter ramarna.
   benefits:
     - Budförslag som följer körplanen
     - Samlad granskning före skickning
@@ -67,7 +67,7 @@
 - id: administration
   title: Administration
   short_title: Administration
-  icon: zizzla-services-system.svg
+  icon: zizzla-services-system.png
   value: Följ upp resultat, positioner och värdeskapande på samma ställe.
   text: Smidig uppföljning av intäkter, kostnader och produktion – allt samlat i ett användarvänligt gränssnitt. Samla resultat och status för att förenkla administrationen och få bättre underlag för nästa beslut.
   benefits:

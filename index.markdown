@@ -57,26 +57,19 @@ published: true
                 <p class="text-center text-[10px] uppercase tracking-[0.4em] text-white/40 mb-10">Våra kunder och partners</p>
                 
                 <div class="relative flex overflow-hidden">
-                    <div class="animate-scroll flex items-center space-x-24 pr-24">
-                        {% assign logo_style = "h-8 w-auto opacity-60 hover:opacity-100 transition-opacity brightness-0 invert flex-shrink-0" %}
-                        
-                        <img alt="Adven" src="{{site.baseurl}}/assets/img/logo_adven.svg" class="{{ logo_style }}">
-                        <img alt="Novotek" src="{{site.baseurl}}/assets/img/logo_novotek.svg" class="{{ logo_style }}">
-                        <img alt="Nässjö energi" src="{{site.baseurl}}/assets/img/logo_nassjo.svg" class="{{ logo_style }}">
-                        <img alt="Almi" src="{{site.baseurl}}/assets/img/logo_almi.svg" class="{{ logo_style }}">
-                        <img alt="Tranås energi" src="{{site.baseurl}}/assets/img/logo_tranasenergi.png" class="{{ logo_style }}">
-                        <img alt="Energimyndigheten" src="{{site.baseurl}}/assets/img/logo_energimyndigheten.svg" class="{{ logo_style }}">
-                        <img alt="Inclusive Business Partners" src="{{site.baseurl}}/assets/img/logo_inclusive_business.png" class="{{ logo_style }}">
-
-
-                        <img alt="Adven" src="{{site.baseurl}}/assets/img/logo_adven.svg" class="{{ logo_style }}">
-                        <img alt="Novotek" src="{{site.baseurl}}/assets/img/logo_novotek.svg" class="{{ logo_style }}">
-                        <img alt="Nässjö energi" src="{{site.baseurl}}/assets/img/logo_nassjo.svg" class="{{ logo_style }}">
-                        <img alt="Almi" src="{{site.baseurl}}/assets/img/logo_almi.svg" class="{{ logo_style }}">
-                        <img alt="Tranås energi" src="{{site.baseurl}}/assets/img/logo_tranasenergi.png" class="{{ logo_style }}">
-                        <img alt="Energimyndigheten" src="{{site.baseurl}}/assets/img/logo_energimyndigheten.svg" class="{{ logo_style }}">
-                        <img alt="Inclusive Business Partners" src="{{site.baseurl}}/assets/img/logo_inclusive_business.png" class="{{ logo_style }}">
-
+                    <div class="animate-scroll">
+                        {% assign logo_style = "h-8 w-auto opacity-60 hover:opacity-100 transition-opacity brightness-0 invert shrink-0" %}
+                        {% for copy in (1..2) %}
+                        <div class="logo-set"{% if copy == 2 %} aria-hidden="true"{% endif %}>
+                            <img alt="{% if copy == 1 %}Adven{% endif %}" src="{{site.baseurl}}/assets/img/logo_adven.svg" width="850" height="200" class="{{ logo_style }}">
+                            <img alt="{% if copy == 1 %}Novotek{% endif %}" src="{{site.baseurl}}/assets/img/logo_novotek.svg" width="120" height="32" class="{{ logo_style }}">
+                            <img alt="{% if copy == 1 %}Nässjö energi{% endif %}" src="{{site.baseurl}}/assets/img/logo_nassjo.svg" width="522" height="95" class="{{ logo_style }}">
+                            <img alt="{% if copy == 1 %}Almi{% endif %}" src="{{site.baseurl}}/assets/img/logo_almi.svg" width="114" height="41" class="{{ logo_style }}">
+                            <img alt="{% if copy == 1 %}Tranås energi{% endif %}" src="{{site.baseurl}}/assets/img/logo_tranasenergi.png" width="865" height="429" class="{{ logo_style }}">
+                            <img alt="{% if copy == 1 %}Energimyndigheten{% endif %}" src="{{site.baseurl}}/assets/img/logo_energimyndigheten.svg" width="178" height="43" style="aspect-ratio: 177.776 / 42.5197" class="{{ logo_style }}">
+                            <img alt="{% if copy == 1 %}Inclusive Business Partners{% endif %}" src="{{site.baseurl}}/assets/img/logo_inclusive_business.png" width="2048" height="459" class="{{ logo_style }}">
+                        </div>
+                        {% endfor %}
                     </div>
                 </div>
             </div>
