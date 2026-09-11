@@ -47,13 +47,13 @@ published: true
                 <div class="hero-pitch space-y-6 mb-8">
                     <p>
                         <span class="block text-xl md:text-2xl font-medium text-white/90"><span class="text-spring">Zizzla</span> är</span>
-                        <span class="sr-only">dirigenten för el- och värmeproduktionen, länken mellan elmarknaden och anläggningen och verktyget som får plan, bud och drift att hänga ihop. Mer kraft ur det ni redan har. Byggt för dem som faktiskt driftar.</span>
+                        <span class="sr-only">dirigenten för el- och värmeproduktionen, länken mellan elmarknaden och anläggningen, verktyget som får plan, bud och drift att hänga ihop, motorn som får ut mer av det ni redan har och byggt för dem som faktiskt driftar.</span>
                         <span class="hero-phrases" aria-hidden="true">
                             <span class="hero-phrase is-active">dirigenten för el- och värmeproduktionen</span>
                             <span class="hero-phrase">länken mellan elmarknaden och anläggningen</span>
                             <span class="hero-phrase">verktyget som får plan, bud och drift att hänga ihop</span>
-                            <span class="hero-phrase">Mer kraft ur det ni redan har.</span>
-                            <span class="hero-phrase">Byggt för dem som faktiskt driftar.</span>
+                            <span class="hero-phrase">motorn som får ut mer av det ni redan har</span>
+                            <span class="hero-phrase">byggt för dem som faktiskt driftar</span>
                         </span>
                     </p>
                     <p class="text-lg md:text-xl font-medium text-white">För fjärrvärmebolag och industri.</p>
