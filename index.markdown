@@ -174,7 +174,7 @@ published: true
                 <div class="grid gap-6 md:grid-cols-2 md:gap-10">
                     <div>
                         <h3 class="text-xl font-bold text-white">Planera med verkligheten som begränsning</h3>
-                        <p class="mt-3 text-sm leading-6 text-white/70">Zizzla kombinerar prognoser för last, priser och andra relevanta signaler med anläggningens faktiska möjligheter. Optimeringen tar hänsyn till både permanenta och tillfälliga begränsningar.</p>
+                        <p class="mt-3 text-sm leading-6 text-white/70">Zizzla kombinerar prognoser och marknadssignaler med hela energisystemet – värme- och elproduktion, elförbrukning, lager och tekniska begränsningar – för att hitta körplanen med bäst totalekonomi.</p>
                     </div>
                     <div>
                         <p class="text-xs font-bold uppercase tracking-widest text-spring">Det här händer</p>

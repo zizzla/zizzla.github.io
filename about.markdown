@@ -5,6 +5,10 @@ subtitle: "Zizzla väntar inte"
 permalink: /about/
 published: true
 ---
+Zizzla väntar inte på framtidens energisystem. Vi börjar med det som redan finns.
+
+Kraftvärme, värmepumpar, elpannor, termiska lager och industriella processer finns redan idag. Utmaningen är att få dem att samspela bättre med ett allt mer dynamiskt elsystem.
+
 Zizzla Energy vill bidra till resurseffektivt och framtidssäkrat energisystem genom att erbjuda Precisionsflex™ som optimerar el- och värmeproduktion för
 fjärrvärmebolag och industrier.
 
