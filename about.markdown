@@ -9,12 +9,22 @@ Zizzla väntar inte på framtidens energisystem. Vi börjar med det som redan fi
 
 Kraftvärme, värmepumpar, elpannor, termiska lager och industriella processer finns redan idag. Utmaningen är att få dem att samspela bättre med ett allt mer dynamiskt elsystem.
 
-Zizzla Energy vill bidra till resurseffektivt och framtidssäkrat energisystem genom att erbjuda Precisionsflex™ som optimerar el- och värmeproduktion för
-fjärrvärmebolag och industrier.
+## Därför startade vi Zizzla
 
-Vi tror att nyckeln till ett hållbart och pålitligt energisystem ligger i att maximera potentialen hos de resurser som redan finns tillgängliga.
+Zizzla startades för att vi såg att det saknades en helhetslösning för den som faktiskt planerar och kör en energianläggning.
 
-Genom att koppla upp era produktionsenheter till Zizzlas tjänster kan ni handla på olika marknader. Vi ser vi till att maximera lönsamheten samtidigt som ni bidrar till elnätets stabilitet. Detta är ett viktigt steg mot en hållbar och elektrifierad framtid.
+Fler el- och balansmarknader skapar stora möjligheter, men också fler beslut, fler system och fler manuella steg. För mindre och medelstora fjärrvärmebolag och industrier blir tröskeln snabbt för hög om varje ny marknad kräver ny specialistkunskap, stora systembyten eller separat hårdvara.
 
-Vi förenklar driften för personalen och frigör tid från administrativt krångel, samtidigt som vi ger dem den feedback och de verktyg de behöver för att fatta ännu bättre beslut och ha roligare på jobbet.
+**Vi tycker inte att det ska behöva vara så.**
 
+## Gör det lätt att göra rätt
+
+Zizzla optimerar hela el- och värmesystemet och hjälper driftorganisationen från prognos och planering till budgivning, aktivering och uppföljning.
+
+Den som planerar och kör ska inte behöva vara expert på optimeringsmodeller, el- och balansmarknader eller automation för att kunna fatta bra beslut i driften.
+
+Vi bygger våra verktyg utifrån vad de som planerar och driftar faktiskt behöver. För den teoretiskt bästa lösningen spelar ingen roll om ingen kan eller vill använda den.
+
+## Potentialen finns redan
+
+Vi vill göra det lätt att göra rätt – och få ut mer av den potential som redan finns både i anläggningarna och hos människorna som driver dem.
